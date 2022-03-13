@@ -1,0 +1,90 @@
+
+/* Grid */
+.grid {
+    height: calc(100vh - 66px);
+    width: 100%;
+    display: grid;
+
+    grid-template-areas: 
+    "curriculum curriculum"
+    "proyectos github"
+    "sociales sociales";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 130px 1fr;
+    place-items: center;
+}
+.grid a{
+    text-decoration: none;
+    color:black;
+}
+.curriculum{
+    grid-area: curriculum;
+    align-self: flex-end;
+}
+.proyectos{
+    grid-area: proyectos;
+    justify-self: flex-end;
+    margin-right: 4rem;
+    
+}
+.github{
+    grid-area: github;
+    justify-self: flex-start;
+    margin-left: 4rem;
+    
+
+}
+.sociales{
+    grid-area: sociales;
+    align-self: flex-start;
+
+}
+/* Fin Grid */
+/* Cuadrados centro */
+.curriculum, .proyectos, .github, .sociales{
+    width: 100px;
+    height: 100px;
+    border: black 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.curriculum:hover, .proyectos:hover, .github:hover, .sociales:hover{
+
+transform: translateY(-3px);
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.curriculum:active, .proyectos:active, .github:active, .sociales:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.curriculum a{
+    padding: 40px 10px;
+}
+.proyectos a{
+    padding:40px 15px;
+}
+.github a{
+    padding: 40px 25px;
+    position: relative;
+    top: -15px;
+}
+.sociales a{
+    padding: 40px 20px;
+}
+
+
+/* cuadradros centro fin */
+
+/* Iconos de cuadrados */
+.github i{
+    position: relative;
+    left: 34px;
+    top: -50px;
+    font-size: 2rem;
+}

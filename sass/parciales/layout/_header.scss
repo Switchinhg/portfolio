@@ -1,0 +1,75 @@
+@import  '../general/variables';
+header {
+    position: sticky;
+    top: 0;
+    background-color:white;
+    z-index: 200;
+    box-shadow: 0px 3px 2px rgba(173, 173, 173, 0.8);
+}
+.header-nav{
+    display:flex;
+}
+.header-nombre{
+    flex-grow:1;
+    text-align:center;
+    align-self:center;
+    font-size:1.5rem;
+    color:black;
+    text-transform:uppercase;
+    margin: 0 20%;
+    text-shadow: 2px 2px 2px gray;
+}
+.header-nombre:hover{
+    .header-font-hover{
+        color:$azulnombre;
+    }
+}  
+    
+
+.header-info{
+    display:flex;
+    justify-content:flex-end;
+    align-self:center;
+    margin:1rem;
+}
+.header-info a{
+    margin: 0 20px;
+    padding: 0.281rem;
+}
+
+.header-info a{
+    text-decoration: none;
+    color:black;
+    padding: 0.5rem;
+    
+}
+.header-info a:hover{
+    background-color: $azulnombre;
+    color: white;
+    border-radius: 1rem;
+}
+
+header:hover {
+    background: linear-gradient(88deg, #28ddae, #a1dd28, #28acdd, #7c28dd, #dd288e);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: headerGradentAnimacion 12s ease infinite;
+    -moz-animation: headerGradentAnimacion 12s ease infinite;
+    animation: headerGradentAnimacion 12s ease infinite;
+}
+
+@-webkit-keyframes headerGradentAnimacion {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@-moz-keyframes headerGradentAnimacion {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@keyframes headerGradentAnimacion {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
