@@ -82,11 +82,11 @@ header:hover {
 
 /* Grid */
 .grid {
-  height: calc(100vh - 66px);
+  height: calc(100vh - 67px);
   width: 100%;
   display: grid;
-  grid-template-areas: "curriculum curriculum" "proyectos github" "sociales sociales";
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "curriculum curriculum curriculum" "proyectos flechabajo github" "sociales sociales sociales";
+  grid-template-columns: 1fr 0px 1fr;
   grid-template-rows: 1fr 130px 1fr;
   place-items: center; }
 
@@ -130,24 +130,69 @@ header:hover {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-.curriculum a {
-  padding: 40px 10px; }
+/* Cajas posiciones dentro */
+.curriculum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
 
-.proyectos a {
-  padding: 40px 15px; }
+.proyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
 
-.github a {
-  padding: 40px 25px;
-  position: relative;
-  top: -15px; }
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
 
-.sociales a {
-  padding: 40px 20px; }
+.sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
+
+/* caja Iconos dentro */
+.proyectos i {
+  padding-top: 0.5rem;
+  font-size: 1.7rem; }
+
+.curriculum i {
+  padding-top: 0.5rem;
+  font-size: 1.7rem; }
+
+.flechabajo i {
+  font-size: 2rem; }
+
+.flechabajo i:hover {
+  font-size: 3rem; }
+
+.github i {
+  padding-top: 0.5rem;
+  font-size: 1.7rem; }
+
+.sociales i {
+  padding-top: 0.5rem;
+  font-size: 1.7rem; }
 
 /* cuadradros centro fin */
 /* Iconos de cuadrados */
-.github i {
-  position: relative;
-  left: 34px;
-  top: -50px;
-  font-size: 2rem; }
+/* Body */
+.grid {
+  background-image: url("../../../img/bg.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* Section sobremi */
+.sec-sobremi {
+  height: 100vh; }
+
+/* end Section sobremi */
+/* Sobre Mi */

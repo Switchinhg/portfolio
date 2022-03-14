@@ -1,15 +1,15 @@
 
 /* Grid */
 .grid {
-    height: calc(100vh - 66px);
+    height: calc(100vh - 67px);
     width: 100%;
     display: grid;
 
     grid-template-areas: 
-    "curriculum curriculum"
-    "proyectos github"
-    "sociales sociales";
-    grid-template-columns: 1fr 1fr;
+    "curriculum curriculum curriculum"
+    "proyectos flechabajo github"
+    "sociales sociales sociales";
+    grid-template-columns: 1fr 0px 1fr;
     grid-template-rows: 1fr 130px 1fr;
     place-items: center;
 }
@@ -40,6 +40,7 @@
 
 }
 /* Fin Grid */
+
 /* Cuadrados centro */
 .curriculum, .proyectos, .github, .sociales{
     width: 100px;
@@ -62,29 +63,80 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Cajas posiciones dentro */
+.curriculum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+}
+.proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+}
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+}
+.sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+}
 
-.curriculum a{
-    padding: 40px 10px;
+/* caja Iconos dentro */
+.proyectos i{
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
 }
-.proyectos a{
-    padding:40px 15px;
+.curriculum i{
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
 }
-.github a{
-    padding: 40px 25px;
-    position: relative;
-    top: -15px;
+.flechabajo i{
+    font-size: 2rem;
 }
-.sociales a{
-    padding: 40px 20px;
+.flechabajo i:hover{
+    font-size: 3rem;
 }
-
-
+.github i{
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
+}
+.sociales i{
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
+}
 /* cuadradros centro fin */
 
 /* Iconos de cuadrados */
-.github i{
-    position: relative;
-    left: 34px;
-    top: -50px;
-    font-size: 2rem;
+
+
+/* Body */
+.grid{
+    background-image: url("../../../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
 }
+
+/* Section sobremi */
+
+.sec-sobremi{
+    height: 100vh;
+}
+
+/* end Section sobremi */
+
+
+/* Sobre Mi */
+
+
