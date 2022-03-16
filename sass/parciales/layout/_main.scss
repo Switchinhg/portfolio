@@ -195,7 +195,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     flex-direction: column;
     gap: 2rem;
 }
-.contenedorhabilidaes_contenido{
+.contenedorhabilidaes_contenido, .contenedoraprendiendo_contenido{
     display: flex;
     flex-direction: row;
     gap: 7rem;
@@ -212,11 +212,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 .contenedoraprendiendo_titulo , .contenedorhabilidaes_titulo{
     text-align: center;
 }
-.contenedoraprendiendo_contenido{
-    display: flex;
-    flex-direction: row;
-    gap: 7rem;
-}
+
 
 .sec-habilidades img{
     height: 100px;
@@ -224,6 +220,22 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 
 .hsass img{
     height: 90px ;
+}
+
+.habilidad p{
+    opacity: 0;
+}
+.habilidad:hover{
+    transform: scale(1.3);
+    #react_p{
+        opacity: 1;
+    }
+    #backend_p{
+        opacity: 1;
+    }
+    #js_p{
+        opacity: 1;
+    }
 }
 
 .hjs img{

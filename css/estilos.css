@@ -249,7 +249,7 @@ html {
   flex-direction: column;
   gap: 2rem; }
 
-.contenedorhabilidaes_contenido {
+.contenedorhabilidaes_contenido, .contenedoraprendiendo_contenido {
   display: flex;
   flex-direction: row;
   gap: 7rem;
@@ -264,16 +264,23 @@ html {
 .contenedoraprendiendo_titulo, .contenedorhabilidaes_titulo {
   text-align: center; }
 
-.contenedoraprendiendo_contenido {
-  display: flex;
-  flex-direction: row;
-  gap: 7rem; }
-
 .sec-habilidades img {
   height: 100px; }
 
 .hsass img {
   height: 90px; }
+
+.habilidad p {
+  opacity: 0; }
+
+.habilidad:hover {
+  transform: scale(1.3); }
+  .habilidad:hover #react_p {
+    opacity: 1; }
+  .habilidad:hover #backend_p {
+    opacity: 1; }
+  .habilidad:hover #js_p {
+    opacity: 1; }
 
 .hjs img {
   position: relative;
