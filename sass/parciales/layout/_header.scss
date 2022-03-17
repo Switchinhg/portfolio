@@ -9,19 +9,24 @@ header {
 .header-nav{
     display:flex;
 }
+.header-nombre h1{
+    width: 300px;
+    
+}
 .header-nombre{
+    display: flex;
+    justify-content: center;
     flex-grow:1;
-    text-align:center;
     align-self:center;
     font-size:1.5rem;
     color:black;
     text-transform:uppercase;
-    margin: 0 20%;
     text-shadow: 2px 2px 2px gray;
 }
-.header-nombre:hover{
+.header-nombre h1:hover{
     .header-font-hover{
         color:$azulnombre;
+        text-shadow: 0 0 5px black;
     }
 }  
     
