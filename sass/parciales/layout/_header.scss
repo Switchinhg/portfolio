@@ -23,6 +23,10 @@ header {
     text-transform:uppercase;
     text-shadow: 2px 2px 2px gray;
 }
+.header-nombre a{
+    color: black;
+    text-decoration: none;
+}
 .header-nombre h1:hover{
     .header-font-hover{
         color:$azulnombre;

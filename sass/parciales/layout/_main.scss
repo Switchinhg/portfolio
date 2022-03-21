@@ -11,7 +11,7 @@ html {
     grid-template-areas: 
     "habilidades habilidades habilidades"
     "proyectos flechabajo github"
-    "sociales sociales sociales";
+    "contacto contacto contacto";
     grid-template-columns: 1fr 0px 1fr;
     grid-template-rows: 1fr 130px 1fr;
     place-items: center;
@@ -37,15 +37,15 @@ html {
     
 
 }
-.sociales{
-    grid-area: sociales;
+.contacto{
+    grid-area: contacto;
     align-self: flex-start;
 
 }
 /* Fin Grid */
 
 /* Cuadrados centro */
-.habilidades, .proyectos, .github, .sociales{
+.habilidades, .proyectos, .github, .contacto{
     width: 120px;
     height: 120px;
     border: black 1px solid;
@@ -54,14 +54,14 @@ html {
     flex-direction: column;
     
 }
-.habilidades:hover, .proyectos:hover, .github:hover, .sociales:hover{
+.habilidades:hover, .proyectos:hover, .github:hover, .contacto:hover{
 
 transform: translateY(-3px);
 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 
 }
 
-.habilidades:active, .proyectos:active, .github:active, .sociales:active {
+.habilidades:active, .proyectos:active, .github:active, .contacto:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -88,7 +88,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     font-size: 1.2rem;
     background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
 }
-.sociales {
+.contacto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     padding-top: 0.5rem;
     font-size: 2rem;
 }
-.sociales i{
+.contacto i{
     padding-top: 0.5rem;
     font-size: 1.7rem;
 }
@@ -252,16 +252,102 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Section Sociales */
-
-.sec_sociales{
-    height: 100vh;
-    background-color: rgba(255, 99, 71, 0.5);
-}
 
 /* Section Contacto */
 
 .sec_contacto{
     height: 100vh;
     background-color: rgba(127, 255, 212, 0.5);
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+$formwidth : 200px ;
+.formulario_container{
+    padding: 3rem 2rem;
+    background-color: rgb(253, 242, 242);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.377);
+    border: black 1px solid;
+
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    label{
+        padding: 1rem 5rem 0.5rem 0.5rem;
+    }
+    input{
+        border-radius: 3px;
+        padding: 0.5rem;
+        width: $formwidth;
+        height: 30px;
+        border: none;
+    }
+    input:focus , textarea:focus{
+        outline:none;
+        box-shadow: 0 0 3px black;
+        
+    }
+
+    textarea{
+        border: none;
+        resize: none;
+        margin-top: 0.3rem;
+        border-radius: 3px;
+        width: 100%;
+    }
+    input, textarea{
+        border: 1px solid gray;
+    }
+    #asunto{
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    .buttonsend{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        padding: 0.7rem 1rem;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        border: solid 1px gray;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        
+    }
+    button:hover{
+        box-shadow: 0 0 5px black;
+    }
+}
+
+.redes_contacto{
+
+    text-align: center;
+
+    h3{
+        margin-bottom: 1rem;
+    }
+    .redes{
+        display:flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        a{
+            padding: 0.3rem;
+            border-radius: 1rem;
+        }
+    }
+    .redes a{
+        text-decoration: none;
+        color: black;
+    }
+    .redes a:hover{
+        background-color: tomato;
+    }
 }

@@ -12,11 +12,13 @@
     <title>Santiago Font - Portfolio</title>
 </head>
 <body>
-
+<h1 id="subir" style="opacity: 0;"></h1>
     <header>
         <nav class="header-nav">
             <div class="header-nombre">
+                <a href="#subir">
                 <h1>Santiago <span class="header-font-hover"> Font </span></h1>
+            </a>
             </div>
             <div class="header-info">
                 <a href="#sobremi">Sobre mi</a>
@@ -24,14 +26,14 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="grid">
+    <main >
+        <div  class="grid">
 
             <a class="habilidades" href="#habilidades">Habilidades  <img src="./img/skills.png" alt=""> </a>
             <a class="proyectos" href="#sec_proyectos">Proyectos <i class="fa-solid fa-wrench"></i></a>
-            <a class="flechabajo" href="#sobremi"><i class="fa-solid fa-chevron-down"></i></a>
+            <a  class="flechabajo" href="#sobremi"><i class="fa-solid fa-chevron-down"></i></a>
             <a class="github" href="https://github.com/Switchinhg">Github <i class="fa-brands fa-github"></i></a>
-            <a class="sociales" href="#sec_sociales">Contactame! <i class="fa-solid fa-share-nodes"></i></a>
+            <a class="contacto" href="#sec_contacto">Contactame! <i class="fa-solid fa-share-nodes"></i></a>
         </div>
         <section id="sobremi" class="sec-sobremi">
 
@@ -67,6 +69,9 @@
                 <div class="habilidad ">
                     <img src="./img/css.png" alt="Logo de CSS3">
                 </div>
+                <div class="habilidad">
+                    <img src="./img/bootstrap.svg" alt="Logo De Bootstrap">
+                </div>
                 <div class="habilidad hsass">
                     <img src="./img/sass.png" alt="Logo de SASS">
                 </div>
@@ -100,38 +105,94 @@
 
         <section id="sec_proyectos" class="sec_proyectos">
 
-                <h1 style="text-align: center; padding-top: 50vh;">En construction</h1>
+                <h1 style="text-align: center; padding-top: 50vh;">sección Proyectos En construction</h1>
         </section>
 
-        <section id="sec_sociales" class="sec_sociales">
 
-                <h1 style="text-align: center; padding-top: 50vh;">En construction</h1>
-
-        </section>
 
         <section id="sec_contacto" class="sec_contacto">
-            <h1 style="text-align: center; padding-top: 50vh;">En construction</h1>
 
-            <form method="post" name="enviarformulario" action="./js/enviaremail.php">
+            
+            <!-- HTML FORMULARIO -->
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+            <div class="formulario_container">
+                
+            <form  name="enviarformulario" >
 
-                <label for="mail">Mail</label>
-                <input type="email" name="mail" id="mail">
+                <h1>Contacto</h1>
+                
+                <input type="text" placeholder="Roberto" name="nombre" id="nombre" required>
+                <input type="email" placeholder="alguien@direccion.com" name="mail" id="mail" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <input type="text" name="mensaje" id="mensaje">
+                <br>
+                <input placeholder="Asunto" name="asunto" id="asunto" type="text">
+                <br>
 
-                <button type="submit">Enviar</button>
+                
+                <textarea name="mensaje" placeholder="Tu mensaje..." id="mensaje" cols="30" rows="5"  required></textarea>
+                <br>
+                <!-- <div class="buttonsend">
+                    <button onclick="enviarmsg()">Enviar</button>
+                </div> -->
             </form>
+            <div class="buttonsend">
+                <button onclick="enviarmsg()">Enviar</button>
+            </div>
+
+
+            
+        </div>
+
+        <div class="redes_contacto">
+            <h3>Mis redes!</h3>
+
+            <div class="redes">
+                <a href="mailto:santifonlop@hotmail.com">Email</a>
+                
+                <a href="">Github</a>
+                
+                <a href="">Linkedin</a>
+            
+                <a href="">Twitter</a>
+            
+                <a href="">Instagram</a>
+            </div>
+
+        </div>
+            
 
         </section>
 
         <section class="sec_footer">
-            <h1 style="text-align: center; padding-top: 20vh;">En construction</h1>
+            <h1 style="text-align: center; padding-top: 20vh;"> sección footer En construction</h1>
         </section>
 
     </main>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+
+
+            function enviarmsg(){
+
+            
+
+                Swal.fire({
+                    icon: "success",
+                    html: `Mensaje enviado! <br> Estare en contacto pronto `,
+                    confirmButtonText: "Salir",
+                    timer: 5000,
+                    timerProgressBar: true,
+                    allowOutsideClick: true,
+                    
+                })
+            }
+
+            
+        
+
+    </script>
 </body>
 </html>
