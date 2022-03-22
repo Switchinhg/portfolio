@@ -1,6 +1,7 @@
 /* HTML */
 html {
     scroll-behavior: smooth;
+    background-color: $bgcolor;
 }
 /* Grid */
 .grid {
@@ -110,10 +111,11 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 .flechabajo i{
     font-size: 2rem;
+    animation-name: grandechico;
+    animation-duration: 4s ;
+    animation-iteration-count: infinite;
 }
-.flechabajo i:hover{
-    font-size: 3rem;
-}
+
 .github i{
     padding-top: 0.5rem;
     font-size: 2rem;
@@ -135,8 +137,37 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 
+/* Animacion */
+@keyframes grandechico {
 
-/* end Section sobremi */
+    0%{
+        color:black;
+
+    }
+    50%{
+        color: $azulnombre;
+        transform: scale(1.3);
+    }
+    100%{
+        color:black;
+        transform: scale(1);
+    }
+}
+@keyframes moversepoquito {
+
+    0%{
+        color:black;
+
+    }
+    50%{
+        color: $azulnombre;
+        transform: scale(1.3);
+    }
+    100%{
+        color:black;
+        transform: scale(1);
+    }
+}
 
 
 /* Sobre Mi */
@@ -158,7 +189,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 .infosobremi{
     width: 650px;
     height: 300px;
-    
+    background-color: rgb(255, 255, 255);
     border: solid 1px black;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -178,7 +209,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 
 /* Section habilidades */
 .sec-habilidades{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -249,16 +280,16 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 
 .sec_proyectos{
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
 /* Section Contacto */
 
 .sec_contacto{
+    position: relative;
+    left: -50px;
+    padding-top: 10vh;
     height: 100vh;
-    background-color: rgba(127, 255, 212, 0.5);
-    padding-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,8 +297,9 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 $formwidth : 200px ;
 .formulario_container{
+    
     padding: 3rem 2rem;
-    background-color: rgb(253, 242, 242);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.377);
     border: black 1px solid;
@@ -329,7 +361,7 @@ $formwidth : 200px ;
 
 .redes_contacto{
 
-    text-align: center;
+   
 
     h3{
         margin-bottom: 1rem;
@@ -337,7 +369,8 @@ $formwidth : 200px ;
     .redes{
         display:flex;
         flex-direction: column;
-        gap: 0.2rem;
+        gap: 0.5rem;
+        text-align: left;
         a{
             padding: 0.3rem;
             border-radius: 1rem;
