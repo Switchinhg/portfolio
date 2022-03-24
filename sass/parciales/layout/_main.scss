@@ -51,7 +51,7 @@ body{
 .habilidades, .proyectos, .github, .contacto{
     width: 120px;
     height: 120px;
-    border: black 1px solid;
+    border: rgb(0, 0, 0) 1px solid;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 .portrait img{
     width: 350px;
     border-radius: 50%;
-    border: solid 1px black;
+    border: solid 1px rgb(0, 0, 0);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     
 }
@@ -204,7 +204,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     width: 650px;
     height: 300px;
     background-color: rgb(255, 255, 255);
-    border: solid 1px black;
+    border: solid 1px rgb(0, 0, 0);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     padding: 2rem;
@@ -338,7 +338,7 @@ $formwidth : 250px ;
     }
     input:focus , textarea:focus{
         outline:none;
-        box-shadow: 0 0 3px black;
+        box-shadow: 0 0 3px rgb(0, 0, 0);
         
     }
 
@@ -350,7 +350,7 @@ $formwidth : 250px ;
         width: 100%;
     }
     input, textarea{
-        border: 1px solid gray;
+        border: 1px solid rgb(128, 128, 128);
     }
     #asunto{
         margin: 0.5rem 0;
@@ -365,13 +365,15 @@ $formwidth : 250px ;
         padding: 0.7rem 1rem;
         color: black;
         background-color: rgb(255, 255, 255);
-        border: solid 1px gray;
+        border: solid 1px rgb(128, 128, 128);
         border-radius: 1rem;
         margin-top: 1rem;
         
     }
     button:hover{
-        box-shadow: 0 0 5px black;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        background-color: $azulnombre;
+
     }
 }
 
@@ -394,7 +396,7 @@ $formwidth : 250px ;
     }
     .redes a{
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
         text-align: center;
     }
     .redes a:hover{
@@ -416,7 +418,7 @@ $formwidth : 250px ;
     height: 500px;
     img{
         height: 300px;
-        border: solid gray 1px;
+        border: solid rgb(128, 128, 128) 1px;
         
     }
     .proyectTags{
@@ -444,12 +446,12 @@ $formwidth : 250px ;
         font-size: 1.5rem;
     }
     .tag{
-        color: white;
+        color: rgb(255, 255, 255);
         padding: 0 0.5rem;
     }
     a{
-        background-color: gray ;
-        color: white;
+        background-color: rgb(255, 99, 71) ;
+        color: rgb(255, 255, 255);
         width: 100px;
         
         text-decoration: none;

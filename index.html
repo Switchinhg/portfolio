@@ -17,6 +17,7 @@
     <title>Santiago Font - Portfolio</title>
 </head>
 <body>
+    <!-- H1 para subir arriba del todo -->
 <h1 id="subir" style="opacity: 0; position: absolute;
 top: -50px;"></h1>
     <header>
@@ -60,17 +61,19 @@ top: -50px;"></h1>
             
         
         </section>
+        <!-- para usar el id y ir hasta la seccion de habilidades -->
 <h1 id="habilidades" style="opacity: 0; ">a</h1>
+        <!-- Inicio Sección habilidades -->
         <section  class="sec-habilidades">
 
             
-
+            <!-- Contenedor habilidades -->
         <div class="contenedorhabilidaes">
-
+            <!--  contenedor titulo -->
             <div class="contenedorhabilidaes_titulo">
                 <h1>Habilidades</h1>
             </div>
-
+            <!-- contenedor habilidades -->
             <div class="contenedorhabilidaes_contenido">
                 <div class="habilidad">
                     <img src="./img/html.png" alt="Logo de HTML5">
@@ -92,11 +95,13 @@ top: -50px;"></h1>
         </div>
 
         
-
+            <!-- Contenendor aprendiendo -->
         <div class="contenedoraprendiendo">
+            <!-- contenedor aprendiendo titulo -->
             <div class="contenedoraprendiendo_titulo">
                 <h2>Aprendiendo</h2>
             </div>
+            <!-- contenedor aprendiendo contenido -->
             <div class="contenedoraprendiendo_contenido">
 
             
@@ -113,12 +118,19 @@ top: -50px;"></h1>
         </div>
 
         </section>
+        <!-- Fin habilidades -->
+        <!-- h1 para usar el salto a proyectos -->
         <h1 id="sec_proyectos" style="opacity: 0; ">a</h1>
+        <!-- Inicio seccion de proyectos -->
         <section  class="sec_proyectos">
 
+            <!-- carrusel de proyectos -->
             <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active " data-bs-interval="200000">
+                    <div class="carousel-item active " >
+
+                        <!-- Proyecto 1 -->
+
                         <!-- Contenedor del proyecto -->
                         <div class="content">
                             <!-- Imagenes del proyecto -->
@@ -133,7 +145,8 @@ top: -50px;"></h1>
                                 </div>
                                 <!-- Info del proyecto -->
                                 <div class="proyectinfo">
-                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas.</h1>
+                                    <h1>Sitio web creado para el proyecto final del curso de Desarrollo web de la Carrera de Full Stack developer</h1>
+                                    <!-- Quisas poner un <p> con mas info -->
                                     <div class="proyectTags">
                                         <div class="tag">
                                             <p>HTML5</p>
@@ -158,7 +171,7 @@ top: -50px;"></h1>
                     </div>
                     <div class="carousel-item">
                         
-
+                            <!-- Proyecto 2 -->
                             <!-- Contenedor del proyecto -->
                         <div class="content">
                             <!-- Imagenes del proyecto -->
@@ -173,7 +186,8 @@ top: -50px;"></h1>
                                 </div>
                                 <!-- Info del proyecto -->
                                 <div class="proyectinfo">
-                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas.</h1>
+                                    <h1>Sitio web creado para el proyecto final del curso de Desarrollo web de la Carrera de Full Stack developer</h1>
+                                    <!-- Quisas poner un <p> con mas info -->
                                     <div class="proyectTags">
                                         <div class="tag">
                                             <p>HTML5</p>
@@ -199,6 +213,7 @@ top: -50px;"></h1>
                         
                     </div>
                     <div class="carousel-item">
+                            <!-- Proyecto 3 -->
                         <!-- Contenedor del proyecto -->
                         <div class="content">
                             <!-- Imagenes del proyecto -->
@@ -213,7 +228,8 @@ top: -50px;"></h1>
                                 </div>
                                 <!-- Info del proyecto -->
                                 <div class="proyectinfo">
-                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas.</h1>
+                                    <h1>Sitio web creado para el proyecto final del curso de Desarrollo web de la Carrera de Full Stack developer</h1>
+                                    <!-- Quisas poner un <p> con mas info -->
                                     <div class="proyectTags">
                                         <div class="tag">
                                             <p>HTML5</p>
@@ -237,6 +253,7 @@ top: -50px;"></h1>
                         </div>
                     </div>
                     </div>
+                    <!-- Botones menejar carrusel -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
                     <span style="filter: invert(100%);" class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -247,9 +264,9 @@ top: -50px;"></h1>
                     </button>
                 </div>
         </section>
+        <!-- Fin seccion proyectos -->
 
-
-
+        <!-- Inicio seccion contacto -->
         <section id="sec_contacto" class="sec_contacto">
 
             
@@ -260,16 +277,19 @@ top: -50px;"></h1>
             <form  name="enviarformulario" >
 
                 <h1>Contacto</h1>
+                <!-- msg no funciona -->
                 <p style="text-align: center;font-size: 0.7rem; position: relative; top: -40px;">Todavia no funciona :c click <a href="mailto:santifonlop@hotmail.com">Aqui</a></p>
                 
+                <!-- nombre y email -->
                 <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
                 <input type="email" placeholder="alguien@direccion.com" name="mail" id="mail" required>
 
                 <br>
+                <!-- asunto -->
                 <input placeholder="Asunto" name="asunto" id="asunto" type="text">
                 <br>
 
-                
+                <!-- mensaje -->
                 <textarea name="mensaje" placeholder="Tu mensaje..." id="mensaje" cols="30" rows="5"  required></textarea>
                 <br>
                 <!-- <div class="buttonsend">
@@ -283,20 +303,21 @@ top: -50px;"></h1>
 
             
         </div>
+            <!-- seccion redes -->
 
         <div class="redes_contacto">
             <h3>Mis redes!</h3>
 
             <div class="redes">
-                <a href="mailto:santifonlop@hotmail.com">Email</a>
+                <a href="mailto:santifonlop@hotmail.com" target="_blank">Email</a>
                 
-                <a href="">Github</a>
+                <a href="https://github.com/Switchinhg" target="_blank">Github</a>
                 
-                <a href="">Linkedin</a>
+                <a href="https://www.linkedin.com/in/santigo-font-5a40ab175/" target="_blank">Linkedin</a>
             
-                <a href="">Twitter</a>
+                <a href="https://twitter.com/Swicho4" target="_blank">Twitter</a>
             
-                <a href="">Instagram</a>
+                <a href="https://www.instagram.com/santiago.f.lopez/" target="_blank">Instagram</a>
             </div>
 
         </div>
