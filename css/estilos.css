@@ -27,7 +27,6 @@ header {
   align-self: center;
   font-size: 1.5rem;
   color: black;
-  text-transform: uppercase;
   text-shadow: 2px 2px 2px gray; }
 
 .header-nombre a {
@@ -91,7 +90,9 @@ header:hover {
 
 /* HTML */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; }
+
+body {
   background-color: #fafafa; }
 
 /* Grid */
@@ -150,28 +151,40 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  animation-name: moversepoquito;
+  animation-duration: 1s;
+  animation-iteration-count: 3; }
 
 .proyectos {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  animation-name: moversepoquito;
+  animation-duration: 1s;
+  animation-iteration-count: 3; }
 
 .github {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  animation-name: moversepoquito;
+  animation-duration: 1s;
+  animation-iteration-count: 3; }
 
 .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)); }
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  animation-name: moversepoquito;
+  animation-duration: 1s;
+  animation-iteration-count: 3; }
 
 /* caja Iconos dentro */
 .grid a {
@@ -220,17 +233,15 @@ html {
 
 @keyframes moversepoquito {
   0% {
-    color: black; }
+    transform: rotate(2deg); }
   50% {
-    color: #11c7df;
-    transform: scale(1.3); }
+    transform: rotate(-2deg); }
   100% {
-    color: black;
-    transform: scale(1); } }
+    transform: rotate(2deg); } }
 
 /* Sobre Mi */
 .sec-sobremi {
-  height: 100vh;
+  height: 615px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,9 +272,12 @@ html {
 .infosobremi hr {
   margin: 1rem; }
 
+.centrarflecha {
+  display: flex; }
+
 /* Section habilidades */
 .sec-habilidades {
-  height: 70vh;
+  height: 615px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -338,8 +352,7 @@ html {
   padding: 3rem 2rem;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.377);
-  border: black 1px solid; }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.377); }
   .formulario_container h1 {
     text-align: center;
     text-transform: uppercase;
@@ -349,7 +362,7 @@ html {
   .formulario_container input {
     border-radius: 3px;
     padding: 0.5rem;
-    width: 200px;
+    width: 250px;
     height: 30px;
     border: none; }
   .formulario_container input:focus, .formulario_container textarea:focus {
@@ -394,9 +407,56 @@ html {
 
 .redes_contacto .redes a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  text-align: center; }
 
 .redes_contacto .redes a:hover {
-  background-color: tomato; }
+  background-color: #11c7df; }
+
+.sec_proyectos {
+  height: 500px; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 8rem;
+  background-color: #fafafa;
+  height: 500px; }
+  .content img {
+    height: 300px;
+    border: solid gray 1px; }
+  .content .proyectTags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; }
+    .content .proyectTags .tag {
+      /* background-color: rgb(220, 20, 60); */
+      background-color: #11c7df;
+      height: 25px; }
+
+.nombreinfowrap, .proyectinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.proyectinfo h1 {
+  font-size: 1.5rem; }
+
+.proyectinfo .tag {
+  color: white;
+  padding: 0 0.5rem; }
+
+.proyectinfo a {
+  background-color: gray;
+  color: white;
+  width: 100px;
+  text-decoration: none;
+  padding: 0 0 0 5px;
+  border-radius: 5px; }
+
+.proyectinfo a:hover {
+  background-color: #11c7df; }
 
 /* $bgcolor: #f0f0f5; */
