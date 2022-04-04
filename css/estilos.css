@@ -264,7 +264,7 @@ body {
 
 .infosobremi {
   width: 650px;
-  height: 320px;
+  max-height: 590px;
   background-color: white;
   border: solid 1px black;
   border-radius: 5px;
@@ -309,6 +309,7 @@ body {
 .contenedorhabilidaes_contenido,
 .contenedoraprendiendo_contenido {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 7rem;
   justify-content: center;
@@ -478,3 +479,31 @@ body {
   background-color: #11c7df; }
 
 /* $bgcolor: #f0f0f5; */
+@media only screen and (max-width: 1111px) {
+  .content img {
+    height: 200px; } }
+
+@media only screen and (max-width: 890px) {
+  .content {
+    flex-direction: column; }
+    .content img {
+      height: 200px; }
+  .sec-sobremi {
+    gap: 5rem; } }
+
+@media only screen and (max-width: 730px) {
+  .sec-sobremi {
+    gap: 1rem;
+    flex-direction: column; }
+  .tag {
+    display: none; }
+  #sobremi {
+    height: auto; }
+  .sec-habilidades {
+    height: auto; }
+  .contenedorhabilidaes_contenido {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 480px) {
+  .proyectinfo h1 {
+    font-size: 1rem; } }
