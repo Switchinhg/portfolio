@@ -23,53 +23,94 @@
     <title>Santiago Font - Portfolio</title>
 </head>
 
-<body>
-    <!-- H1 para subir arriba del todo -->
-    <h1 id="subir" style="opacity: 0; position: absolute;
-top: -50px;"></h1>
-    <header>
-        <nav class="header-nav">
-            <div class="header-nombre">
-                <a href="#subir">
-                    <h1>Santiago <span class="header-font-hover"> Font </span></h1>
-                </a>
-            </div>
-            <div class="header-info">
-                <a href="#sobremi">Sobre mi</a>
-                <a href="#sec_contacto">Contacto</a>
-            </div>
-        </nav>
-    </header>
+<body>    
+    
     <main>
-        <div class="grid">
+        <section id="inicio">
+            <div class="cta">
+                <div class="info">
+                    <p>Hola! soy <span class="nombre"> Santiago Font</span> <br> Desarrollador Front End y <br> estudiante  Full Stack</p>
+                    <a href="#sobremi">BAJAR <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="wave">
+                <svg id="visual" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <path d="M0 112L15.2 121.2C30.3 130.3 60.7 148.7 91 147.3C121.3 146 151.7 125 182 118.8C212.3 112.7 242.7 121.3 273 127.2C303.3 133 333.7 136 364 138.2C394.3 140.3 424.7 141.7 454.8 133.8C485 126 515 109 545.2 100.8C575.3 92.7 605.7 93.3 636 102.8C666.3 112.3 696.7 130.7 727 135.5C757.3 140.3 787.7 131.7 818 125C848.3 118.3 878.7 113.7 909 119.5C939.3 125.3 969.7 141.7 984.8 149.8L1000 158L1000 0L984.8 0C969.7 0 939.3 0 909 0C878.7 0 848.3 0 818 0C787.7 0 757.3 0 727 0C696.7 0 666.3 0 636 0C605.7 0 575.3 0 545.2 0C515 0 485 0 454.8 0C424.7 0 394.3 0 364 0C333.7 0 303.3 0 273 0C242.7 0 212.3 0 182 0C151.7 0 121.3 0 91 0C60.7 0 30.3 0 15.2 0L0 0Z" fill="#167bd8"></path><path d="M0 120L15.2 112.8C30.3 105.7 60.7 91.3 91 83.5C121.3 75.7 151.7 74.3 182 70.7C212.3 67 242.7 61 273 58.2C303.3 55.3 333.7 55.7 364 66.8C394.3 78 424.7 100 454.8 108.7C485 117.3 515 112.7 545.2 104.8C575.3 97 605.7 86 636 78.7C666.3 71.3 696.7 67.7 727 64.5C757.3 61.3 787.7 58.7 818 60.8C848.3 63 878.7 70 909 74C939.3 78 969.7 79 984.8 79.5L1000 80L1000 0L984.8 0C969.7 0 939.3 0 909 0C878.7 0 848.3 0 818 0C787.7 0 757.3 0 727 0C696.7 0 666.3 0 636 0C605.7 0 575.3 0 545.2 0C515 0 485 0 454.8 0C424.7 0 394.3 0 364 0C333.7 0 303.3 0 273 0C242.7 0 212.3 0 182 0C151.7 0 121.3 0 91 0C60.7 0 30.3 0 15.2 0L0 0Z" fill="#2084e1"></path><path d="M0 72L15.2 68.3C30.3 64.7 60.7 57.3 91 51.5C121.3 45.7 151.7 41.3 182 43.8C212.3 46.3 242.7 55.7 273 59.7C303.3 63.7 333.7 62.3 364 55C394.3 47.7 424.7 34.3 454.8 29.5C485 24.7 515 28.3 545.2 37.8C575.3 47.3 605.7 62.7 636 61C666.3 59.3 696.7 40.7 727 32.3C757.3 24 787.7 26 818 33.2C848.3 40.3 878.7 52.7 909 52.2C939.3 51.7 969.7 38.3 984.8 31.7L1000 25L1000 0L984.8 0C969.7 0 939.3 0 909 0C878.7 0 848.3 0 818 0C787.7 0 757.3 0 727 0C696.7 0 666.3 0 636 0C605.7 0 575.3 0 545.2 0C515 0 485 0 454.8 0C424.7 0 394.3 0 364 0C333.7 0 303.3 0 273 0C242.7 0 212.3 0 182 0C151.7 0 121.3 0 91 0C60.7 0 30.3 0 15.2 0L0 0Z" fill="#298dea"></path>
+                </svg>
+            </div>
+            
 
-            <a class="habilidades" href="#habilidades">Habilidades <img src="./img/skills.png" alt=""> </a>
-            <a class="proyectos" href="#sec_proyectos">Proyectos <i class="fa-solid fa-wrench"></i></a>
-            <a class="flechabajo" href="#sobremi"><i class="fa-solid fa-chevron-down"></i></a>
-            <a class="github" target="_blank" href="https://github.com/Switchinhg">Github <i class="fa-brands fa-github"></i></a>
-            <a class="contacto" href="#sec_contacto">Contactame! <i class="fa-solid fa-share-nodes"></i></a>
+        </section>
+
+        <div class="navbar-wrap">
+            <div class="links">
+            <a href="#inicio" id="iniciolink" class="active">INICIO</a>
+            <a href="#sobremi" id="sobremilink">SOBRE MI</a>
+            <a href="#portfolio" id="portfoliolink">PORTFOLIO</a>
+            <a href="#sec_contacto" id="contacto">CONTACTO</a>
+            </div>
+            <div class="engesp">
+                <p id="en">En</p>
+                <p id="nopointer">/</p>
+                <p id="esp" class="active">Esp</p>
+            </div>
         </div>
-        <section id="sobremi" class="sec-sobremi">
+        <!-- test -->
+        <script>
+ 
 
-            <div class="portrait"><img src="./img/yo.png" alt=""></div>
-            <div class="infosobremi">
-                <h1>Sobre Mi</h1>
-                <hr>
-                <p>
-                    Hola! Soy Santiago, estudiante full stack developer, soy una persona llena de ganas de seguir aprendiendo y crear cosas increibles
-                </p>
-                <p>
-                    Actualmente estoy en el curso de JavaScript, después de haber completado el de <a target="_blank" href="https://www.coderhouse.com.uy/certificados/622fafd05c2bca0076a70710">Desarrollo Web</a> y así después continuar con el de ReactJS y Backend
-                </p>
-                <p>Como objetivo profesional busco la inserción en el mundo laboral para asi poder contribuir en proyectos que logren un impacto positivo en la industria. </p>
+            let inicio = document.getElementById("iniciolink")
+            inicio.onclick = () => {
+                window.scrollTo(0,0)
+                document.querySelector( '.active' ).classList.remove( 'active' );
+                inicio.classList.add("active")
+            }
+
+            /* al bajar con la ruedita cambia de colores el navbar */
+            window.onscroll = () =>{
+           /* todos los links */
+           let links = document.querySelectorAll(".links")
+            /* todas las secciones */
+            let secs = document.querySelectorAll("section")
+                secs.forEach(sec =>{
+                    let top = window.scrollY
+                    let offset = sec.offsetTop
+                    let height = sec.offsetHeight
+                    let id = sec.getAttribute("id")
+
+                    if(top >= offset && top < offset + height){
+                        links.forEach(e =>{
+                            document.querySelector( '.links .active' ).classList.remove( 'active' );
+                            document.querySelector(".links a[href*= " + id + " ]").classList.add("active")
+                        })
+                    }
+                })
+
+            }
+
+
+
+        </script>
+        <!--  -->
+        <section id="sobremi" class="sec-sobremi">
+            
+                <h1 id="sobremititulo">Sobre Mi</h1>
+            
+            <div class="infoyimg">
+
+                <div class="portrait"><img src="./img/yo.png" alt=""></div>
+                <div class="infosobremi">
+                    <p>Soy estudiante de la Carrera de full stack en CoderHouse</p>
+                    <p>Me identifico como una persona con muchas ganas de aprender y crear cosas increibles.</p>
+                    <p> Actualmente estoy en el modulo de ReactJS después de haber terminado el de Desarrollo Web y JavaScript.</p>
+                </div>
             </div>
 
 
         </section>
-        <!-- para usar el id y ir hasta la seccion de habilidades -->
-        <h1 id="habilidades" style="opacity: 0; ">a</h1>
+    
         <!-- Inicio Sección habilidades -->
-        <section class="sec-habilidades">
+        <div id="habilidades" class="sec-habilidades">
 
 
             <!-- Contenedor habilidades -->
@@ -122,160 +163,11 @@ top: -50px;"></h1>
 
             </div>
 
+        </div>
+
+        <section id="portfolio">
+            <h1>En construcción</h1>
         </section>
-        <!-- Fin habilidades -->
-        <!-- h1 para usar el salto a proyectos -->
-        <h1 id="sec_proyectos" style="opacity: 0; ">a</h1>
-        <!-- Inicio seccion de proyectos -->
-        <section class="sec_proyectos">
-
-            <!-- carrusel de proyectos -->
-            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active ">
-
-                        <!-- Proyecto 1 -->
-
-                        <!-- Contenedor del proyecto -->
-                        <div class="content">
-                            <!-- Imagenes del proyecto -->
-                            <div class="proyectImgs">
-                                <img src="./img/syceventosthumb.png" alt="">
-                            </div>
-                            <!-- Contenedor nombre y info del proyecto -->
-                            <div class="nombreinfowrap">
-                                <!-- Nombre del proyecto -->
-                                <div class="proyectname">
-                                    <h1>Syc Eventos</h1>
-                                </div>
-                                <!-- Info del proyecto -->
-                                <div class="proyectinfo">
-                                    <h1>Sitio web creado para el proyecto final del curso de Desarrollo web de la
-                                        Carrera de Full Stack developer</h1>
-                                    <!-- Quisas poner un <p> con mas info -->
-                                    <div class="proyectTags">
-                                        <div class="tag">
-                                            <p>HTML5</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>CSS3</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>SASS</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>Bootstrap 5</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>Full Responsive</p>
-                                        </div>
-                                    </div>
-                                    <a href="https://switchinhg.github.io/comision29190/" target="_blank">Ir a
-                                        Proyecto</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-
-                        <!-- Proyecto 2 -->
-                        <!-- Contenedor del proyecto -->
-                        <div class="content">
-                            <!-- Imagenes del proyecto -->
-                            <div class="proyectImgs">
-                                <img src="./img/syceventosthumb.png" alt="">
-                            </div>
-                            <!-- Contenedor nombre y info del proyecto -->
-                            <div class="nombreinfowrap">
-                                <!-- Nombre del proyecto -->
-                                <div class="proyectname">
-                                    <h1>Syc Eventos</h1>
-                                </div>
-                                <!-- Info del proyecto -->
-                                <div class="proyectinfo">
-                                    <h1>Sitio web creado para el proyecto final del curso de Desarrollo web de la
-                                        Carrera de Full Stack developer</h1>
-                                    <!-- Quisas poner un <p> con mas info -->
-                                    <div class="proyectTags">
-                                        <div class="tag">
-                                            <p>HTML5</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>CSS3</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>SASS</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>Bootstrap 5</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>Full Responsive</p>
-                                        </div>
-                                    </div>
-                                    <a href="https://switchinhg.github.io/comision29190/" target="_blank">Ir a
-                                        Proyecto</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="carousel-item">
-                        <!-- Proyecto 3 -->
-                        <!-- Contenedor del proyecto -->
-                        <div class="content">
-                            <!-- Imagenes del proyecto -->
-                            <div class="proyectImgs">
-                                <img src="./img/syceventosthumb.png" alt="">
-                            </div>
-                            <!-- Contenedor nombre y info del proyecto -->
-                            <div class="nombreinfowrap">
-                                <!-- Nombre del proyecto -->
-                                <div class="proyectname">
-                                    <h1>Syc Eventos</h1>
-                                </div>
-                                <!-- Info del proyecto -->
-                                <div class="proyectinfo">
-                                    <h1>Sitio web creado para el proyecto final del curso de Desarrollo web de la
-                                        Carrera de Full Stack developer</h1>
-                                    <!-- Quisas poner un <p> con mas info -->
-                                    <div class="proyectTags">
-                                        <div class="tag">
-                                            <p>HTML5</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>CSS3</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>SASS</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>Bootstrap 5</p>
-                                        </div>
-                                        <div class="tag">
-                                            <p>Full Responsive</p>
-                                        </div>
-                                    </div>
-                                    <a href="https://switchinhg.github.io/comision29190/" target="_blank">Ir a
-                                        Proyecto</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Botones menejar carrusel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                    <span style="filter: invert(100%);" class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                    <span style="filter: invert(100%);" class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        <!-- Fin seccion proyectos -->
 
         <!-- Inicio seccion contacto -->
         <section id="sec_contacto" class="sec_contacto">
@@ -285,12 +177,9 @@ top: -50px;"></h1>
 
             <div class="formulario_container">
 
-                <form name="enviarformulario">
+                <form action="https://formspree.io/f/mvollgyk" method="POST" name="enviarformulario">
 
                     <h1>Contacto</h1>
-                    <!-- msg no funciona -->
-                    <p style="text-align: center;font-size: 0.7rem; position: relative; top: -40px;">Todavia no funciona
-                        :c click <a href="mailto:santifonlop@hotmail.com">Aqui</a></p>
 
                     <!-- nombre y email -->
                     <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
@@ -305,13 +194,14 @@ top: -50px;"></h1>
                     <textarea name="mensaje" placeholder="Tu mensaje..." id="mensaje" cols="30" rows="5"
                         required></textarea>
                     <br>
-                    <!-- <div class="buttonsend">
+                    <br>
+                    <div class="buttonsend">
+                        <button name="enviar" type="submit" onclick="enviarmsg()"> Enviar </button>
+                </div>
+                </form>
+             <!--    <div class="buttonsend">
                     <button onclick="enviarmsg()">Enviar</button>
                 </div> -->
-                </form>
-                <div class="buttonsend">
-                    <button onclick="enviarmsg()">Enviar</button>
-                </div>
 
 
 
@@ -322,15 +212,13 @@ top: -50px;"></h1>
                 <h3>Mis redes!</h3>
 
                 <div class="redes">
-                    <a href="mailto:santifonlop@hotmail.com" target="_blank">Email</a>
+                    <a href="https://github.com/Switchinhg" target="_blank"><i class="fa-brands fa-github"></i></a>
 
-                    <a href="https://github.com/Switchinhg" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/santigo-font-5a40ab175/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
-                    <a href="https://www.linkedin.com/in/santigo-font-5a40ab175/" target="_blank">Linkedin</a>
+                    <a href="https://twitter.com/Swicho4" target="_blank"><i class="fa-brands fa-twitter"></i></a>
 
-                    <a href="https://twitter.com/Swicho4" target="_blank">Twitter</a>
-
-                    <a href="https://www.instagram.com/santiago.f.lopez/" target="_blank">Instagram</a>
+                    <a href="https://www.instagram.com/santiago.f.lopez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
 
             </div>

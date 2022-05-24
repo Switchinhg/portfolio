@@ -1,290 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Poppins', sans-serif; }
 
 /* $bgcolor: #f0f0f5; */
-header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 200;
-  box-shadow: 0px 3px 2px rgba(173, 173, 173, 0.8); }
-
-.header-nav {
-  display: flex; }
-
-.header-nombre h1 {
-  width: 300px; }
-
-.header-nombre {
+.cta {
+  height: 60vh;
+  background-color: #298DEA;
   display: flex;
   justify-content: center;
-  flex-grow: 1;
-  align-self: center;
-  font-size: 1.5rem;
-  color: black;
-  text-shadow: 2px 2px 2px gray; }
+  align-items: center; }
+  .cta .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem; }
+    .cta .info p {
+      color: white;
+      text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.51); }
+    .cta .info .nombre {
+      color: #FFF279; }
+    .cta .info a {
+      color: white;
+      border: solid white 2px;
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      box-shadow: #298DEA -5px 5px 2px, #333333 -5px 5px 5px 2px; }
+    .cta .info a:hover {
+      transform: translateX(-5px) translateY(5px);
+      box-shadow: none; }
+      .cta .info a:hover i {
+        animation: FlechaAbajo 1s alternate ease-out forwards; }
 
-.header-nombre a {
-  color: black;
-  text-decoration: none; }
-
-.header-nombre h1:hover .header-font-hover {
-  color: #11c7df;
-  text-shadow: 0 0 5px black; }
-
-.header-info {
+.navbar-wrap {
+  position: sticky;
+  top: 0;
   display: flex;
-  justify-content: flex-end;
-  align-self: center;
-  margin: 1rem; }
-
-.header-info a {
-  margin: 0 20px;
-  padding: 0.281rem; }
-
-.header-info a {
-  text-decoration: none;
-  color: black;
-  padding: 0.5rem; }
-
-.header-info a:hover {
-  background-color: #11c7df;
+  gap: 5rem;
+  padding: 1rem 2rem;
+  background-color: #2E2E2E;
   color: white;
-  border-radius: 1rem; }
+  z-index: 10; }
+  .navbar-wrap .links {
+    display: flex;
+    gap: 5rem; }
+    .navbar-wrap .links a {
+      cursor: pointer;
+      text-decoration: none;
+      color: white; }
+    .navbar-wrap .links a:hover {
+      color: #11c7df; }
+  .navbar-wrap .engesp {
+    display: flex;
+    gap: 0.5rem; }
+    .navbar-wrap .engesp #nopointer {
+      cursor: auto; }
+    .navbar-wrap .engesp a {
+      cursor: pointer;
+      text-decoration: none; }
+    .navbar-wrap .engesp a:hover {
+      color: #11c7df; }
 
-header:hover {
-  background: linear-gradient(88deg, #28ddae, #a1dd28, #28acdd, #7c28dd, #dd288e);
-  background-size: 1000% 1000%;
-  -webkit-animation: headerGradentAnimacion 12s ease infinite;
-  -moz-animation: headerGradentAnimacion 12s ease infinite;
-  animation: headerGradentAnimacion 12s ease infinite; }
+.active {
+  color: #298DEA !important; }
 
-@-webkit-keyframes headerGradentAnimacion {
-  0% {
-    background-position: 29% 0%; }
-  50% {
-    background-position: 72% 100%; }
+.active:hover {
+  color: white; }
+
+@keyframes FlechaAbajo {
+  0% { }
   100% {
-    background-position: 29% 0%; } }
-
-@-moz-keyframes headerGradentAnimacion {
-  0% {
-    background-position: 29% 0%; }
-  50% {
-    background-position: 72% 100%; }
-  100% {
-    background-position: 29% 0%; } }
-
-@keyframes headerGradentAnimacion {
-  0% {
-    background-position: 29% 0%; }
-  50% {
-    background-position: 72% 100%; }
-  100% {
-    background-position: 29% 0%; } }
+    transform: rotate(90deg); } }
 
 /* HTML */
 html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #fafafa; }
+  background-color: #E4E4E4; }
 
-/* Grid */
-.grid {
-  height: calc(100vh - 67px);
-  width: 100%;
-  display: grid;
-  grid-template-areas: "habilidades habilidades habilidades" "proyectos flechabajo github" "contacto contacto contacto";
-  grid-template-columns: 1fr 0px 1fr;
-  grid-template-rows: 1fr 130px 1fr;
-  place-items: center; }
-
-.grid a {
-  text-decoration: none;
-  color: black; }
-
-.habilidades {
-  grid-area: habilidades;
-  align-self: flex-end; }
-
-.proyectos {
-  grid-area: proyectos;
-  justify-self: flex-end;
-  margin-right: 4rem; }
-
-.github {
-  grid-area: github;
-  justify-self: flex-start;
-  margin-left: 4rem; }
-
-.contacto {
-  grid-area: contacto;
-  align-self: flex-start; }
-
-/* Fin Grid */
-/* Cuadrados centro */
-.habilidades,
-.proyectos,
-.github,
-.contacto {
-  width: 120px;
-  height: 120px;
-  border: black 1px solid;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column; }
-
-.habilidades:hover,
-.proyectos:hover,
-.github:hover,
-.contacto:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
-
-.habilidades:active,
-.proyectos:active,
-.github:active,
-.contacto:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-
-/* Cajas posiciones dentro */
-.habilidades {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-  animation-name: moversepoquito;
-  animation-duration: 1s;
-  animation-iteration-count: 3; }
-
-.proyectos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-  animation-name: moversepoquito;
-  animation-duration: 1s;
-  animation-iteration-count: 3; }
-
-.github {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-  animation-name: moversepoquito;
-  animation-duration: 1s;
-  animation-iteration-count: 3; }
-
-.contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-  animation-name: moversepoquito;
-  animation-duration: 1s;
-  animation-iteration-count: 3; }
-
-/* caja Iconos dentro */
-.grid a {
-  padding-top: 0.5rem; }
-
-.proyectos i {
-  padding-top: 0.5rem;
-  font-size: 1.7rem; }
-
-.habilidades img {
-  padding-top: 0.5rem;
-  width: 2.2rem; }
-
-.flechabajo i {
-  font-size: 2rem;
-  animation-name: grandechico;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }
-
-.github i {
-  padding-top: 0.5rem;
-  font-size: 2rem; }
-
-.contacto i {
-  padding-top: 0.5rem;
-  font-size: 1.7rem; }
-
-/* cuadradros centro fin */
-/* Iconos de cuadrados */
-/* Body */
-.grid {
-  background-image: url("../img/bg.jpg");
-  background-position: center;
-  background-size: cover; }
-
-/* Animacion */
-@keyframes grandechico {
-  0% {
-    color: black; }
-  50% {
-    color: #11c7df;
-    transform: scale(1.3); }
-  100% {
-    color: black;
-    transform: scale(1); } }
-
-@keyframes moversepoquito {
-  0% {
-    transform: rotate(2deg); }
-  50% {
-    transform: rotate(-2deg); }
-  100% {
-    transform: rotate(2deg); } }
+p {
+  margin-bottom: 0; }
 
 /* Sobre Mi */
 .sec-sobremi {
   height: 615px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10rem; }
+  gap: 2rem; }
 
 .portrait img {
   width: 350px;
-  border-radius: 50%;
-  border: solid 1px black;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  border-radius: 50%; }
+
+.infoyimg {
+  display: flex;
+  align-items: center;
+  gap: 5rem; }
+
+#sobremititulo {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+  margin-top: 5rem; }
 
 .infosobremi {
   width: 650px;
   max-height: 590px;
-  background-color: white;
-  border: solid 1px black;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   padding: 2rem; }
   .infosobremi h1 {
     font-size: 2rem; }
 
-.sec-sobremi h1 {
-  text-align: left;
-  margin-bottom: 1rem; }
-
 .infosobremi p {
   margin-bottom: 1rem; }
-
-.infosobremi hr {
-  margin: 1rem; }
-
-.centrarflecha {
-  display: flex; }
 
 /* Section habilidades */
 .sec-habilidades {
@@ -356,8 +189,7 @@ body {
 .sec_contacto {
   position: relative;
   left: -50px;
-  padding-top: 10vh;
-  height: 100vh;
+  height: 615px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,11 +198,9 @@ body {
 .formulario_container {
   padding: 3rem 2rem;
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.377); }
+  border-radius: 10px; }
   .formulario_container h1 {
     text-align: center;
-    text-transform: uppercase;
     margin-bottom: 2rem; }
   .formulario_container label {
     padding: 1rem 5rem 0.5rem 0.5rem; }
@@ -418,9 +248,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: left; }
+  font-size: 2rem; }
   .redes_contacto .redes a {
-    padding: 0.3rem;
     border-radius: 1rem; }
 
 .redes_contacto .redes a {
@@ -440,7 +269,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0 8rem;
-  background-color: #fafafa;
+  background-color: #E4E4E4;
   height: 500px; }
   .content img {
     height: 300px;
@@ -477,6 +306,10 @@ body {
 
 .proyectinfo a:hover {
   background-color: #11c7df; }
+
+#portfolio {
+  height: 100vh;
+  background-color: cadetblue; }
 
 /* $bgcolor: #f0f0f5; */
 @media only screen and (max-width: 1111px) {

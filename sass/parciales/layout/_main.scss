@@ -7,238 +7,40 @@ body {
     background-color: $bgcolor;
 }
 
-/* Grid */
-.grid {
-    height: calc(100vh - 67px);
-    width: 100%;
-    display: grid;
-
-    grid-template-areas:
-        "habilidades habilidades habilidades"
-        "proyectos flechabajo github"
-        "contacto contacto contacto";
-    grid-template-columns: 1fr 0px 1fr;
-    grid-template-rows: 1fr 130px 1fr;
-    place-items: center;
+p{
+    margin-bottom: 0;
 }
-
-.grid a {
-    text-decoration: none;
-    color: black;
-}
-
-.habilidades {
-    grid-area: habilidades;
-    align-self: flex-end;
-}
-
-.proyectos {
-    grid-area: proyectos;
-    justify-self: flex-end;
-    margin-right: 4rem;
-
-}
-
-.github {
-    grid-area: github;
-    justify-self: flex-start;
-    margin-left: 4rem;
-
-
-}
-
-.contacto {
-    grid-area: contacto;
-    align-self: flex-start;
-
-}
-
-/* Fin Grid */
-
-/* Cuadrados centro */
-.habilidades,
-.proyectos,
-.github,
-.contacto {
-    width: 120px;
-    height: 120px;
-    border: rgb(0, 0, 0) 1px solid;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.habilidades:hover,
-.proyectos:hover,
-.github:hover,
-.contacto:hover {
-
-    transform: translateY(-3px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-
-}
-
-.habilidades:active,
-.proyectos:active,
-.github:active,
-.contacto:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Cajas posiciones dentro */
-.habilidades {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-    animation-name: moversepoquito;
-    animation-duration: 1s;
-    animation-iteration-count: 3;
-}
-
-.proyectos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-    animation-name: moversepoquito;
-    animation-duration: 1s;
-    animation-iteration-count: 3;
-}
-
-.github {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-    animation-name: moversepoquito;
-    animation-duration: 1s;
-    animation-iteration-count: 3;
-}
-
-.contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
-    animation-name: moversepoquito;
-    animation-duration: 1s;
-    animation-iteration-count: 3;
-}
-
-/* caja Iconos dentro */
-.grid a {
-    padding-top: 0.5rem;
-}
-
-.proyectos i {
-    padding-top: 0.5rem;
-    font-size: 1.7rem;
-}
-
-.habilidades img {
-    padding-top: 0.5rem;
-    width: 2.2rem;
-}
-
-.flechabajo i {
-    font-size: 2rem;
-    animation-name: grandechico;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-.github i {
-    padding-top: 0.5rem;
-    font-size: 2rem;
-}
-
-.contacto i {
-    padding-top: 0.5rem;
-    font-size: 1.7rem;
-}
-
-/* cuadradros centro fin */
-
-/* Iconos de cuadrados */
-
-
-/* Body */
-.grid {
-    background-image: url("../img/bg.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-
-/* Animacion */
-@keyframes grandechico {
-
-    0% {
-        color: black;
-
-    }
-
-    50% {
-        color: $azulnombre;
-        transform: scale(1.3);
-    }
-
-    100% {
-        color: black;
-        transform: scale(1);
-    }
-}
-
-@keyframes moversepoquito {
-
-    0% {
-        transform: rotate(2deg);
-
-    }
-
-    50% {
-        transform: rotate(-2deg);
-
-    }
-
-    100% {
-        transform: rotate(2deg);
-    }
-}
-
 
 /* Sobre Mi */
 .sec-sobremi {
     height: 615px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10rem;
+    gap: 2rem;
 }
 
 
 .portrait img {
     width: 350px;
     border-radius: 50%;
-    border: solid 1px rgb(0, 0, 0);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.infoyimg{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
 
 }
 
+#sobremititulo{
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    margin-top: 5rem;
+}
 .infosobremi {
     width: 650px;
     max-height: 590px;
-    background-color: rgb(255, 255, 255);
-    border: solid 1px rgb(0, 0, 0);
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     padding: 2rem;
 
     h1{
@@ -247,22 +49,11 @@ body {
     }
 }
 
-.sec-sobremi h1 {
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
 .infosobremi p {
     margin-bottom: 1rem;
 }
 
-.infosobremi hr {
-    margin: 1rem;
-}
 
-.centrarflecha {
-    display: flex;
-}
 
 /* Section habilidades */
 .sec-habilidades {
@@ -358,8 +149,7 @@ body {
 .sec_contacto {
     position: relative;
     left: -50px;
-    padding-top: 10vh;
-    height: 100vh;
+    height: 615px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,11 +163,9 @@ $formwidth : 250px;
     padding: 3rem 2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.377);
 
     h1 {
         text-align: center;
-        text-transform: uppercase;
         margin-bottom: 2rem;
     }
 
@@ -453,10 +241,9 @@ $formwidth : 250px;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        text-align: left;
+        font-size: 2rem;
 
         a {
-            padding: 0.3rem;
             border-radius: 1rem;
         }
     }
@@ -539,4 +326,11 @@ $formwidth : 250px;
     a:hover {
         background-color: $azulnombre;
     }
+}
+
+
+
+#portfolio{
+    height: 100vh;
+    background-color: cadetblue;
 }

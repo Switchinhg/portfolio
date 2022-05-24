@@ -1,83 +1,92 @@
 @import  '../general/variables';
-header {
-    position: sticky;
-    top: 0;
-    background-color:white;
-    z-index: 200;
-    box-shadow: 0px 3px 2px rgba(173, 173, 173, 0.8);
-}
-.header-nav{
-    display:flex;
-}
-.header-nombre h1{
-    width: 300px;
-    
-}
-.header-nombre{
+
+.cta{
+    height: 60vh;
+    background-color: $azulmain;
     display: flex;
     justify-content: center;
-    flex-grow:1;
-    align-self:center;
-    font-size:1.5rem;
-    color:black;
-    text-shadow: 2px 2px 2px gray;
-}
-.header-nombre a{
-    color: black;
-    text-decoration: none;
-}
-.header-nombre h1:hover{
-    .header-font-hover{
-        color:$azulnombre;
-        text-shadow: 0 0 5px black;
+    align-items: center;
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+        font-size: 1.5rem;
+        p{
+            color: white;
+            text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.51);
+        }
+        .nombre{
+            color: $highlightnombre;
+        }
+        a{
+            color:white;
+            border: solid white 2px;
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            box-shadow: $azulmain -5px 5px 2px, rgb(51, 51, 51) -5px 5px 5px 2px ;
+        }
+        a:hover{
+            transform: translateX(-5px) translateY(5px);
+            box-shadow:none;
+            i{
+                animation: FlechaAbajo 1s alternate ease-out forwards ;
+            }
+        }
     }
-}  
-    
-
-.header-info{
-    display:flex;
-    justify-content:flex-end;
-    align-self:center;
-    margin:1rem;
 }
-.header-info a{
-    margin: 0 20px;
-    padding: 0.281rem;
-}
-
-.header-info a{
-    text-decoration: none;
-    color:black;
-    padding: 0.5rem;
-    
-}
-.header-info a:hover{
-    background-color: $azulnombre;
+.navbar-wrap{
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 2rem;
+    background-color: $navbarBG;
     color: white;
-    border-radius: 1rem;
+    z-index: 10;
+
+    .links{
+        display: flex;
+        gap: 5rem;
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: $azulnombre;
+        }
+    }
+    .engesp{
+        display: flex;
+        gap: 0.5rem;
+        #nopointer{
+            cursor: auto;
+        }
+                a{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $azulnombre;
+        }
+    }
+
+}
+.active{
+    color: $azulmain !important;
+}
+.active:hover{
+    color: white;
 }
 
-header:hover {
-    background: linear-gradient(88deg, #28ddae, #a1dd28, #28acdd, #7c28dd, #dd288e);
-    background-size: 1000% 1000%;
 
-    -webkit-animation: headerGradentAnimacion 12s ease infinite;
-    -moz-animation: headerGradentAnimacion 12s ease infinite;
-    animation: headerGradentAnimacion 12s ease infinite;
-}
+@keyframes FlechaAbajo {
+    0%{
 
-@-webkit-keyframes headerGradentAnimacion {
-    0%{background-position:29% 0%}
-    50%{background-position:72% 100%}
-    100%{background-position:29% 0%}
-}
-@-moz-keyframes headerGradentAnimacion {
-    0%{background-position:29% 0%}
-    50%{background-position:72% 100%}
-    100%{background-position:29% 0%}
-}
-@keyframes headerGradentAnimacion {
-    0%{background-position:29% 0%}
-    50%{background-position:72% 100%}
-    100%{background-position:29% 0%}
+    }
+    100%{
+        transform: rotate(90deg); 
+
+    }
 }
