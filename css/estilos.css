@@ -24,7 +24,7 @@
       color: white;
       text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.51); }
     .cta .info .nombre {
-      color: #FFF279; }
+      color: #FFE600; }
     .cta .info a {
       color: white;
       border: solid white 2px;
@@ -96,7 +96,7 @@ p {
   gap: 2rem; }
 
 .portrait img {
-  width: 350px;
+  width: 300px;
   border-radius: 50%; }
 
 .infoyimg {
@@ -144,9 +144,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 7rem;
+  gap: 5rem;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 800px; }
 
 .contenedoraprendiendo {
   display: flex;
@@ -158,10 +159,10 @@ p {
   text-align: center; }
 
 .sec-habilidades img {
-  height: 100px; }
+  height: 70px; }
 
 .hsass img {
-  height: 90px; }
+  height: 70px; }
 
 .habilidad p {
   opacity: 0; }
@@ -178,12 +179,65 @@ p {
 .hjs img {
   position: relative;
   left: 10px;
-  height: 100px;
+  height: 75px;
   margin-top: 1rem; }
 
 /* Section Proyectos */
-.sec_proyectos {
-  height: 100vh; }
+.titulo {
+  align-self: center; }
+
+#portfolio {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0; }
+
+.proyectos {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 1rem 5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 5rem; }
+
+.proyecto {
+  height: 400px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.486);
+  border-radius: 10px;
+  background-color: white; }
+  .proyecto img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; }
+  .proyecto img:hover {
+    cursor: pointer; }
+
+.demo a {
+  color: black;
+  text-decoration: none;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  border: solid 1px rgba(0, 0, 0, 0.486); }
+
+.demo a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.548); }
+
+.Pcontenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem; }
+  .Pcontenido .nombreP {
+    font-size: 1.2rem; }
+
+.biggi {
+  transform: scale(1.1); }
 
 /* Section Contacto */
 .sec_contacto {
@@ -306,10 +360,6 @@ p {
 
 .proyectinfo a:hover {
   background-color: #11c7df; }
-
-#portfolio {
-  height: 100vh;
-  background-color: cadetblue; }
 
 /* $bgcolor: #f0f0f5; */
 @media only screen and (max-width: 1111px) {
