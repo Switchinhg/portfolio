@@ -169,14 +169,34 @@ p{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.486);
     border-radius:  10px ;
     background-color: white;
+    user-select: none;
 
-    img{
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-    }
     img:hover{
         cursor: pointer;
     }
+}
+.pimg{
+    
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.syc{
+    background-image: url('../../../img/syceventosthumb.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.requete{
+    background-image: url('../../../img/requete.png');
+    background-size: cover;
+    background-position: center;
+  
+}
+.marveldocs{
+    background-image: url('../../../img/marvelapi.png');
+    background-size: cover;
+  
 }
 .demo{
     
@@ -199,13 +219,12 @@ p{
     align-items: center;
     padding: 1rem;
     gap: 1rem;
+
     .nombreP{
         font-size: 1.2rem;
     }
 }
-.biggi{
-    transform: scale(1.1);
-}
+
 
 
 /* Section Contacto */
