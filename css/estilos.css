@@ -179,8 +179,7 @@ p {
 .hjs img {
   position: relative;
   left: 10px;
-  height: 75px;
-  margin-top: 1rem; }
+  height: 75px; }
 
 /* Section Proyectos */
 .titulo {
@@ -199,11 +198,12 @@ p {
   margin: 1rem 5rem;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding: 5rem; }
+  padding: 0.5rem 5rem; }
 
 .proyecto {
   height: 400px;
   min-width: 340px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,23 +215,27 @@ p {
     cursor: pointer; }
 
 .pimg {
+  flex-grow: 1;
   height: 200px;
   width: 100%;
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+  background-size: 340px 200px;
+  background-repeat: no-repeat; }
 
 .syc {
-  background-image: url("../../../img/syceventosthumb.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: url("../img/SyCEventos.png"); }
 
 .requete {
-  background-image: url("../../../img/requete.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: url("../img/RequetePizza.png"); }
 
 .marveldocs {
-  background-image: url("../../../img/marvelapi.png");
-  background-size: cover; }
+  background-image: url("../img/MarvelDOCS.png"); }
+
+.byb {
+  background-image: url("../img/ByB.png"); }
+
+.tags {
+  background-color: aquamarine; }
 
 .demo a {
   color: black;
@@ -247,11 +251,52 @@ p {
 .Pcontenido {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
   padding: 1rem;
-  gap: 1rem; }
+  gap: 1rem;
+  height: 212px; }
+  .Pcontenido p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
   .Pcontenido .nombreP {
     font-size: 1.2rem; }
+
+.chico {
+  font-size: 0.8rem;
+  font-style: italic; }
+
+.modalsito {
+  background-color: rgba(0, 0, 0, 0.329);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10220;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+
+.modaal {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 20px  black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; }
+
+.pDesc {
+  flex-grow: 1; }
+
+#pming {
+  height: 200px; }
 
 /* Section Contacto */
 .sec_contacto {

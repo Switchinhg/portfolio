@@ -49,48 +49,14 @@
             <a href="#portfolio" id="portfoliolink">PORTFOLIO</a>
             <a href="#sec_contacto" id="contacto">CONTACTO</a>
             </div>
-            <div class="engesp">
+            <!-- <div class="engesp">
                 <p id="en">En</p>
                 <p id="nopointer">/</p>
                 <p id="esp" class="active">Esp</p>
-            </div>
+            </div> -->
         </div>
         <!-- test -->
-        <script>
- 
 
-            let inicio = document.getElementById("iniciolink")
-            inicio.onclick = () => {
-                window.scrollTo(0,0)
-                document.querySelector( '.active' ).classList.remove( 'active' );
-                inicio.classList.add("active")
-            }
-
-            /* al bajar con la ruedita cambia de colores el navbar */
-            window.onscroll = () =>{
-           /* todos los links */
-           let links = document.querySelectorAll(".links")
-            /* todas las secciones */
-            let secs = document.querySelectorAll("section")
-                secs.forEach(sec =>{
-                    let top = window.scrollY
-                    let offset = sec.offsetTop
-                    let height = sec.offsetHeight
-                    let id = sec.getAttribute("id")
-
-                    if(top >= offset && top < offset + height){
-                        links.forEach(e =>{
-                            document.querySelector( '.links .active' ).classList.remove( 'active' );
-                            document.querySelector(".links a[href*= " + id + " ]").classList.add("active")
-                        })
-                    }
-                })
-
-            }
-
-
-
-        </script>
         <!--  -->
         <section id="sobremi" class="sec-sobremi">
             
@@ -101,8 +67,9 @@
                 <div class="portrait"><img src="./img/yo.png" alt=""></div>
                 <div class="infosobremi">
                     <p>Soy estudiante de la Carrera de full stack en CoderHouse</p>
-                    <p>Me identifico como una persona que siempre busca la solución  .</p>
-                    <p> Actualmente estoy en el modulo de ReactJS después de haber terminado el de Desarrollo Web y JavaScript.</p>
+                    <p>Me identifico como una persona trabajadora, siempre que tengo un problema no paro hasta encontrar la solución.</p>
+                    <p>Siempre estoy en busqueda de aprender cosas nuevas y reforzar lo ya aprendido.</p>
+                    <p>Actualmente estoy realizando proyectos con JS y React, para seguir aprendiendo y reforzando estas tecnologías.</p>
                 </div>
             </div>
 
@@ -127,15 +94,14 @@
                     <div class="habilidad ">
                         <img src="./img/css.png" alt="Logo de CSS3">
                     </div>
+                    <div class="habilidad hjs">
+                        <img src="./img/JS.png" alt="Logo de JavaScript">
+                    </div>
                     <div class="habilidad">
                         <img src="./img/bootstrap.svg" alt="Logo De Bootstrap">
                     </div>
                     <div class="habilidad hsass">
                         <img src="./img/sass.png" alt="Logo de SASS">
-                    </div>
-                    <div class="habilidad hjs">
-                        <img src="./img/JS.png" alt="Logo de JavaScript">
-                        <p id="js_p">Del 15/03 al 10/5</p>
                     </div>
                     <div class="habilidad ">
                         <img src="./img/git.png" alt="Logo de Git">
@@ -143,6 +109,13 @@
                     <div class="habilidad ">
                         <img src="./img/figma.svg" alt="Logo de Figma">
                     </div>
+                    <div class="habilidad">
+                        <img src="./img/react.png" alt="">
+                    </div>
+                    <div class="habilidad ">
+                        <img src="./img/firebase.png" alt="Logo de Figma">
+                    </div>
+                    
                 </div>
             </div>
 
@@ -156,14 +129,14 @@
                 <!-- contenedor aprendiendo contenido -->
                 <div class="contenedoraprendiendo_contenido">
 
-
                     <div class="habilidad">
-                        <img src="./img/react.png" alt="">
-                        <p id="react_p">Del 17/5 al 12/7</p>
+                        <img src="./img/nextjs.png" alt="">
                     </div>
+
+                    
                     <div class="habilidad">
                         <img src="./img/backend.png" alt="">
-                        <p id="backend_p">Del 19/7 al 10/1</p>
+                        <p id="backend_p">Del 6/9 al 28/2/2023</p>
                     </div>
                 </div>
 
@@ -172,7 +145,7 @@
         </div>
 
         <section id="portfolio">
-            <h1 class="titulo">Portfolio</h1>
+            <h1 class="titulo">Proyectos <span class="chico">Scroll <i class="chico fa-solid fa-chevron-right"></i></span></h1>
             <div class="proyectos">
 
                 <div class="proyecto">
@@ -181,8 +154,7 @@
                             <p class="nombreP"><b> SyC Eventos</b></p>
                             <p>Sitio web creado para el proyecto final del curso de Desarrollo web, Es una pagina ficticia de una empresa de organizacion de eventos.</p>
                             <div class="demo">
-                                <a href="" class="">GitHub</a>
-                                <a href="" class="">Ir a página</a>
+                                <a href="#" id="demosyc" class="">Más info</a>
                             </div>
                         </div>
                 </div>
@@ -190,10 +162,10 @@
                     <div class="pimg requete"></div>
                     <div class="Pcontenido">
                         <p class="nombreP"><b> RequetePizza</b></p>
+                        
                         <p>Sitio web creado para el proyecto final del curso de JavaScript, es la página Ecommerce de una pizzeria.</p>
                         <div class="demo">
-                            <a href="" class="">GitHub</a>
-                            <a href="" class="">Ir a página</a>
+                            <a href="" id="demoRquete"class="">Más info</a>
                         </div>
                     </div>
                 </div>
@@ -203,36 +175,55 @@
                         <p class="nombreP"><b> Marvel DOCS</b></p>
                         <p>Página creada con fin de utilizar la api de Marvel, donde en el inicio te muestra personajes aleatoriamente, y por secciones todos los personajes y comics</p>
                         <div class="demo">
-                            <a href="" class="">GitHub</a>
-                            <a href="" class="">Ir a página</a>
+                            <a href="" id="demoMDocs"class="">Más info</a>
                         </div>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <div class="pimg syc"></div>
+                    <div class="pimg byb"></div>
                     <div class="Pcontenido">
                         <p class="nombreP"><b> Byb </b></p>
-                        <p>Sitio web creado para el proyecto final del curso de Desarrollo web, desarrolle la idea del proyecto y luego como se veria y luego el desarrollo de la pagina misma.</p>
+                        <p>Pagina Web creada con el propósito de proyecto final de coder de ReactJS y ser usada para la micro empresa de mi tia de camitas de perros y gatos.</p>
                         <div class="demo">
-                            <a href="" class="">GitHub</a>
-                            <a href="" class="">Ir a página</a>
+                            <a href="" id="demoByB"class="">Más info</a>
                         </div>
                     </div>
                 </div>
                 
             </div>
-
-
         </section>
 
+        <!-- modal -->
+        <div class="modalsito">
+            <div class="modaal">
+
+                <div >
+                    <p id="nombreProyecto">SyC Eventos</p>
+                </div>
+                <div >
+                    <img id="pming" src="./img/SyCEventos.png" alt="">
+                </div>
+                <div class="pLinks demo" >
+                    <a href="" id="linkgh" target="_blank" class="">GitHub</a>
+                    <a href="" id="iap" target="_blank" class="">Ir a página</a>
+                </div>
+                <div class="tecnologias">
+                    <p><b>Tecnologias Usadas:</b></p>
+                    <div class="tags">
+                        HTML, CSS, Responsive, SEO
+                    </div>
+                </div>
+                <div class="pDesc">
+                    <p id="pDescinfo">Sitio web creado para el proyecto final del curso de Desarrollo web, Es una pagina ficticia de una empresa de organizacion de eventos.</p>
+
+                </div>
+            </div>
+        </div>
+            
         <!-- Inicio seccion contacto -->
         <section id="sec_contacto" class="sec_contacto">
-
-
             <!-- HTML FORMULARIO -->
-
             <div class="formulario_container">
-
                 <form action="https://formspree.io/f/mvollgyk" method="POST" name="enviarformulario">
 
                     <h1>Contacto</h1>
@@ -255,12 +246,6 @@
                         <button name="enviar" type="submit" onclick="enviarmsg()"> Enviar </button>
                 </div>
                 </form>
-             <!--    <div class="buttonsend">
-                    <button onclick="enviarmsg()">Enviar</button>
-                </div> -->
-
-
-
             </div>
             <!-- seccion redes -->
 
@@ -287,22 +272,7 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/js.js"></script>
-    <script>
-        function enviarmsg() {
 
-
-
-            Swal.fire({
-                icon: "success",
-                html: `Mensaje enviado! <br> Estare en contacto pronto `,
-                confirmButtonText: "Salir",
-                timer: 5000,
-                timerProgressBar: true,
-                allowOutsideClick: true,
-
-            })
-        }
-    </script>
 </body>
 
 </html>
