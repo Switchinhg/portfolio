@@ -1,0 +1,57 @@
+
+.navWrapper{
+    height: 50px;
+    display: flex;
+    padding: 0.5rem;
+
+    .botonBurger{
+        display: flex;
+        justify-content: flex-end; 
+        width: 100%;
+        img{
+            width: 34px;
+            height: 34px;
+        }
+    }
+    
+    .tabNav{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        
+        transform: translateY(-100%);
+        
+        transition: .2s;
+        
+        .iconoCloseNav{
+            margin: 0.4rem 0.2rem 0 0;
+            width: 40px;
+            align-self: flex-end ;
+        }
+        .nombreNav{
+                p{
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 0 0 1rem 0;
+                    border-bottom: solid 1px black;
+                    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.315);
+                }
+        }
+        .linksNav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 2rem;
+        }
+    }
+   
+    .navOpen{
+        transform: translateY(0);
+    }
+}

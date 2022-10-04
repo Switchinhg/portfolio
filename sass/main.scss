@@ -1,6 +1,8 @@
-@import "./parciales/componentes/componentes";
-@import "./parciales/layout/header";
-@import "./parciales/layout/main";
-@import "./parciales/general/general";
-@import "./parciales/general/variables";
-@import "./parciales/general/responsive";
+@import "./base/fuentes";
+@import "./base/reset";
+@import "./componentes/botones";
+@import "./base/general";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/keyframes";
+@import "./componentes/header";

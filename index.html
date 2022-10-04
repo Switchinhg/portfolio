@@ -1,278 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-
-
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Santiago Font - Portfolio</title>
+    <script src="./js/js.js" defer></script>
+    <title>Portfolio</title>
 </head>
+<body class="gradiente" style="height: 100vh;">
 
-<body>    
+    <!-- Front page -->
+    <section id="inicio">
+        <!-- Header Mobile -->
+        <header class="navWrapper">
+            <div class="botonBurger">
+                <img id="openNav" src="./img/burgerIcon.svg" alt="">
+            </div>
+            <div id="tabNav" class="gradienteNav tabNav">
+                <img id="closeNav" class="iconoCloseNav" src="./img/icon-x-close.svg" alt="">
+                <div class="contenedorNav">
+                    <div class="nombreNav">
+                        <p>santiago font</p>
+                    </div>
+                    <div class="linksNav">
+                        <a href="#">Proyectos</a>
+                        <a href="#">Sobre mí</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+    </section>
     
-    <main>
-        <section id="inicio">
-            <div class="cta">
-                <div class="info">
-                    <p>Hola! soy <span class="nombre"> Santiago Font</span> <br> Desarrollador Front End y <br> estudiante  Full Stack</p>
-                    <a href="#sobremi">BAJAR <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="wave">
-                <svg id="visual" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                    <path d="M0 112L15.2 121.2C30.3 130.3 60.7 148.7 91 147.3C121.3 146 151.7 125 182 118.8C212.3 112.7 242.7 121.3 273 127.2C303.3 133 333.7 136 364 138.2C394.3 140.3 424.7 141.7 454.8 133.8C485 126 515 109 545.2 100.8C575.3 92.7 605.7 93.3 636 102.8C666.3 112.3 696.7 130.7 727 135.5C757.3 140.3 787.7 131.7 818 125C848.3 118.3 878.7 113.7 909 119.5C939.3 125.3 969.7 141.7 984.8 149.8L1000 158L1000 0L984.8 0C969.7 0 939.3 0 909 0C878.7 0 848.3 0 818 0C787.7 0 757.3 0 727 0C696.7 0 666.3 0 636 0C605.7 0 575.3 0 545.2 0C515 0 485 0 454.8 0C424.7 0 394.3 0 364 0C333.7 0 303.3 0 273 0C242.7 0 212.3 0 182 0C151.7 0 121.3 0 91 0C60.7 0 30.3 0 15.2 0L0 0Z" fill="#167bd8"></path><path d="M0 120L15.2 112.8C30.3 105.7 60.7 91.3 91 83.5C121.3 75.7 151.7 74.3 182 70.7C212.3 67 242.7 61 273 58.2C303.3 55.3 333.7 55.7 364 66.8C394.3 78 424.7 100 454.8 108.7C485 117.3 515 112.7 545.2 104.8C575.3 97 605.7 86 636 78.7C666.3 71.3 696.7 67.7 727 64.5C757.3 61.3 787.7 58.7 818 60.8C848.3 63 878.7 70 909 74C939.3 78 969.7 79 984.8 79.5L1000 80L1000 0L984.8 0C969.7 0 939.3 0 909 0C878.7 0 848.3 0 818 0C787.7 0 757.3 0 727 0C696.7 0 666.3 0 636 0C605.7 0 575.3 0 545.2 0C515 0 485 0 454.8 0C424.7 0 394.3 0 364 0C333.7 0 303.3 0 273 0C242.7 0 212.3 0 182 0C151.7 0 121.3 0 91 0C60.7 0 30.3 0 15.2 0L0 0Z" fill="#2084e1"></path><path d="M0 72L15.2 68.3C30.3 64.7 60.7 57.3 91 51.5C121.3 45.7 151.7 41.3 182 43.8C212.3 46.3 242.7 55.7 273 59.7C303.3 63.7 333.7 62.3 364 55C394.3 47.7 424.7 34.3 454.8 29.5C485 24.7 515 28.3 545.2 37.8C575.3 47.3 605.7 62.7 636 61C666.3 59.3 696.7 40.7 727 32.3C757.3 24 787.7 26 818 33.2C848.3 40.3 878.7 52.7 909 52.2C939.3 51.7 969.7 38.3 984.8 31.7L1000 25L1000 0L984.8 0C969.7 0 939.3 0 909 0C878.7 0 848.3 0 818 0C787.7 0 757.3 0 727 0C696.7 0 666.3 0 636 0C605.7 0 575.3 0 545.2 0C515 0 485 0 454.8 0C424.7 0 394.3 0 364 0C333.7 0 303.3 0 273 0C242.7 0 212.3 0 182 0C151.7 0 121.3 0 91 0C60.7 0 30.3 0 15.2 0L0 0Z" fill="#298dea"></path>
-                </svg>
-            </div>
-            
-
-        </section>
-
-        <div class="navbar-wrap">
-            <div class="links">
-            <a href="#inicio" id="iniciolink" class="active">INICIO</a>
-            <a href="#sobremi" id="sobremilink">SOBRE MI</a>
-            <a href="#portfolio" id="portfoliolink">PORTFOLIO</a>
-            <a href="#sec_contacto" id="contacto">CONTACTO</a>
-            </div>
-            <!-- <div class="engesp">
-                <p id="en">En</p>
-                <p id="nopointer">/</p>
-                <p id="esp" class="active">Esp</p>
-            </div> -->
-        </div>
-        <!-- test -->
-
-        <!--  -->
-        <section id="sobremi" class="sec-sobremi">
-            
-                <h1 id="sobremititulo">Sobre Mi</h1>
-            
-            <div class="infoyimg">
-
-                <div class="portrait"><img src="./img/yo.png" alt=""></div>
-                <div class="infosobremi">
-                    <p>Soy estudiante de la Carrera de full stack en CoderHouse</p>
-                    <p>Me identifico como una persona trabajadora, siempre que tengo un problema no paro hasta encontrar la solución.</p>
-                    <p>Siempre estoy en busqueda de aprender cosas nuevas y reforzar lo ya aprendido.</p>
-                    <p>Actualmente estoy realizando proyectos con JS y React, para seguir aprendiendo y reforzando estas tecnologías.</p>
-                </div>
-            </div>
-
-
-        </section>
-    
-        <!-- Inicio Sección habilidades -->
-        <div id="habilidades" class="sec-habilidades">
-
-
-            <!-- Contenedor habilidades -->
-            <div class="contenedorhabilidaes">
-                <!--  contenedor titulo -->
-                <div class="contenedorhabilidaes_titulo">
-                    <h1>Habilidades</h1>
-                </div>
-                <!-- contenedor habilidades -->
-                <div class="contenedorhabilidaes_contenido">
-                    <div class="habilidad">
-                        <img src="./img/html.png" alt="Logo de HTML5">
-                    </div>
-                    <div class="habilidad ">
-                        <img src="./img/css.png" alt="Logo de CSS3">
-                    </div>
-                    <div class="habilidad hjs">
-                        <img src="./img/JS.png" alt="Logo de JavaScript">
-                    </div>
-                    <div class="habilidad">
-                        <img src="./img/bootstrap.svg" alt="Logo De Bootstrap">
-                    </div>
-                    <div class="habilidad hsass">
-                        <img src="./img/sass.png" alt="Logo de SASS">
-                    </div>
-                    <div class="habilidad ">
-                        <img src="./img/git.png" alt="Logo de Git">
-                    </div>
-                    <div class="habilidad ">
-                        <img src="./img/figma.svg" alt="Logo de Figma">
-                    </div>
-                    <div class="habilidad">
-                        <img src="./img/react.png" alt="">
-                    </div>
-                    <div class="habilidad ">
-                        <img src="./img/firebase.png" alt="Logo de Figma">
-                    </div>
-                    
-                </div>
-            </div>
-
-
-            <!-- Contenendor aprendiendo -->
-            <div class="contenedoraprendiendo">
-                <!-- contenedor aprendiendo titulo -->
-                <div class="contenedoraprendiendo_titulo">
-                    <h2>Aprendiendo</h2>
-                </div>
-                <!-- contenedor aprendiendo contenido -->
-                <div class="contenedoraprendiendo_contenido">
-
-                    <div class="habilidad">
-                        <img src="./img/nextjs.png" alt="">
-                    </div>
-
-                    
-                    <div class="habilidad">
-                        <img src="./img/backend.png" alt="">
-                        <p id="backend_p">Del 6/9 al 28/2/2023</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <section id="portfolio">
-            <h1 class="titulo">Proyectos <span class="chico">Scroll <i class="chico fa-solid fa-chevron-right"></i></span></h1>
-            <div class="proyectos">
-
-                <div class="proyecto">
-                        <div class="pimg syc"></div>
-                        <div class="Pcontenido">
-                            <p class="nombreP"><b> SyC Eventos</b></p>
-                            <p>Sitio web creado para el proyecto final del curso de Desarrollo web, Es una pagina ficticia de una empresa de organizacion de eventos.</p>
-                            <div class="demo">
-                                <a href="#" id="demosyc" class="">Más info</a>
-                            </div>
-                        </div>
-                </div>
-                <div class="proyecto ">
-                    <div class="pimg requete"></div>
-                    <div class="Pcontenido">
-                        <p class="nombreP"><b> RequetePizza</b></p>
-                        
-                        <p>Sitio web creado para el proyecto final del curso de JavaScript, es la página Ecommerce de una pizzeria.</p>
-                        <div class="demo">
-                            <a href="" id="demoRquete"class="">Más info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <div class="pimg marveldocs"></div>
-                    <div class="Pcontenido">
-                        <p class="nombreP"><b> Marvel DOCS</b></p>
-                        <p>Página creada con fin de utilizar la api de Marvel, donde en el inicio te muestra personajes aleatoriamente, y por secciones todos los personajes y comics</p>
-                        <div class="demo">
-                            <a href="" id="demoMDocs"class="">Más info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <div class="pimg byb"></div>
-                    <div class="Pcontenido">
-                        <p class="nombreP"><b> Byb </b></p>
-                        <p>Pagina Web creada con el propósito de proyecto final de coder de ReactJS y ser usada para la micro empresa de mi tia de camitas de perros y gatos.</p>
-                        <div class="demo">
-                            <a href="" id="demoByB"class="">Más info</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- modal -->
-        <div class="modalsito">
-            <div class="modaal">
-
-                <div >
-                    <p id="nombreProyecto">SyC Eventos</p>
-                </div>
-                <div >
-                    <img id="pming" src="./img/SyCEventos.png" alt="">
-                </div>
-                <div class="pLinks demo" >
-                    <a href="" id="linkgh" target="_blank" class="">GitHub</a>
-                    <a href="" id="iap" target="_blank" class="">Ir a página</a>
-                </div>
-                <div class="tecnologias">
-                    <p><b>Tecnologias Usadas:</b></p>
-                    <div class="tags">
-                        HTML, CSS, Responsive, SEO
-                    </div>
-                </div>
-                <div class="pDesc">
-                    <p id="pDescinfo">Sitio web creado para el proyecto final del curso de Desarrollo web, Es una pagina ficticia de una empresa de organizacion de eventos.</p>
-
-                </div>
-            </div>
-        </div>
-            
-        <!-- Inicio seccion contacto -->
-        <section id="sec_contacto" class="sec_contacto">
-            <!-- HTML FORMULARIO -->
-            <div class="formulario_container">
-                <form action="https://formspree.io/f/mvollgyk" method="POST" name="enviarformulario">
-
-                    <h1>Contacto</h1>
-
-                    <!-- nombre y email -->
-                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
-                    <input type="email" placeholder="alguien@direccion.com" name="mail" id="mail" required>
-
-                    <br>
-                    <!-- asunto -->
-                    <input placeholder="Asunto" name="asunto" id="asunto" type="text">
-                    <br>
-
-                    <!-- mensaje -->
-                    <textarea name="mensaje" placeholder="Tu mensaje..." id="mensaje" cols="30" rows="5"
-                        required></textarea>
-                    <br>
-                    <br>
-                    <div class="buttonsend">
-                        <button name="enviar" type="submit" onclick="enviarmsg()"> Enviar </button>
-                </div>
-                </form>
-            </div>
-            <!-- seccion redes -->
-
-            <div class="redes_contacto">
-                <h3>Mis redes!</h3>
-
-                <div class="redes">
-                    <a href="https://github.com/Switchinhg" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-                    <a href="https://www.linkedin.com/in/santigo-font-5a40ab175/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
-                    <a href="https://twitter.com/Swicho4" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-
-                    <a href="https://www.instagram.com/santiago.f.lopez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-
-            </div>
-
-
-        </section>
-
-    </main>
-
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/js.js"></script>
-
 </body>
-
 </html>
