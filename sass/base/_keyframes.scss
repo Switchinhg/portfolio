@@ -1,0 +1,61 @@
+
+
+@keyframes mainTransition {
+    0%{
+
+    } 
+    25%{
+        
+    } 
+    50%{
+        transform: translate(20% , 0);
+    }  
+    100%{
+        transform: translate(-150% , 0);
+    }
+}
+@keyframes mainTransition2 {
+    0%{
+
+    } 
+    25%{
+        
+    } 
+    50%{
+        transform: translate(50% , 0);
+    }  
+    99%{
+        transform: translate(-100% , 0);
+    }
+    100%{
+        transform: translate(100% , 0);
+    }
+}
+@keyframes viene {
+    0%{
+        transform: translate(150% , 0);
+    } 
+    25%{
+        
+    } 
+    50%{
+    }  
+    99%{
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.viene{
+    animation:viene 1s forwards
+}
+
+
+.seVa2{
+    
+    animation: mainTransition2 1s forwards;
+}
+.seVa{
+    animation: mainTransition 1s forwards;
+}
