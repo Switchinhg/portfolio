@@ -167,9 +167,9 @@
 /* new portfolio */
 
 
-openNav = document.getElementById('openNav')
-tabNav = document.getElementById('tabNav')
-closeNav = document.getElementById('closeNav')
+let openNav = document.getElementById('openNav')
+let tabNav = document.getElementById('tabNav')
+let closeNav = document.getElementById('closeNav')
 
 openNav.addEventListener('click', ()=>{
   tabNav.classList.add('navOpen')

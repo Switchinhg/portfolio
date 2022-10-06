@@ -1,0 +1,93 @@
+.proyectos{
+    height: calc(100vh - 50px);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    .tituloProyectos{
+        font-size: 48px;
+        text-align: center;
+    }
+    .proyectosWrapper{
+        display: flex;
+        gap: 2rem;
+        margin: 0 1rem;
+        overflow-x:scroll;
+        scroll-snap-type: x mandatory;
+        .proyecto{
+            margin: 0 20px;
+            height: 451px;
+            border-radius:  26px 26px 26px 26px;
+            background-color: #D9D9D9;
+            max-width: 282px;
+            
+        }
+    }
+    .proyectoImg {
+            height: 167px;
+            width: 282px;
+            border-radius:  26px 26px 0 0;
+            overflow: hidden;
+        img{
+            width: 282px;
+            border-radius:  26px 26px 0 0;
+            transition: 6s;
+        }
+        img:hover{
+            transform: translateY(-80%);
+        }
+    }
+    .proyectoInfoWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        height: 260px ;
+    }
+    .nombreProyecto{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .hrProyecto{
+        width: 122px;
+        margin:-0.5rem auto;
+
+    }
+    .tags{
+        width: 200px ;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        p{
+        background-color: hsla(267, 100%, 58%, 0.65);
+        color: white;
+        padding: 0 0.5rem;
+        margin: 0.5rem 0.5rem 0 0.5rem;
+        border-radius: 4px;
+        }
+    }
+    .textoProyecto{
+        text-align: left;
+        padding: 0 1.5rem;
+        flex-grow: 1;
+        font-size: 16px;
+
+    }
+    .links{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        a{
+            background-color: hsla(267, 100%, 58%, 0.65);
+            color: black;
+            border-radius: 4px;
+            padding: 0.2rem 1rem;
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    }
+
+}

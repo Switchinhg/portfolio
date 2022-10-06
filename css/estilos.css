@@ -19,7 +19,8 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  overflow: hidden; }
   .mainWrapper .mainNombre {
     font-size: 48px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); }
@@ -30,6 +31,80 @@
   .mainWrapper .botonBlanco {
     margin-top: 1rem; }
 
+.proyectos {
+  height: calc(100vh - 50px);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column; }
+  .proyectos .tituloProyectos {
+    font-size: 48px;
+    text-align: center; }
+  .proyectos .proyectosWrapper {
+    display: flex;
+    gap: 2rem;
+    margin: 0 1rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; }
+    .proyectos .proyectosWrapper .proyecto {
+      margin: 0 20px;
+      height: 451px;
+      border-radius: 26px 26px 26px 26px;
+      background-color: #D9D9D9;
+      max-width: 282px; }
+  .proyectos .proyectoImg {
+    height: 167px;
+    width: 282px;
+    border-radius: 26px 26px 0 0;
+    overflow: hidden; }
+    .proyectos .proyectoImg img {
+      width: 282px;
+      border-radius: 26px 26px 0 0;
+      transition: 6s; }
+    .proyectos .proyectoImg img:hover {
+      transform: translateY(-80%); }
+  .proyectos .proyectoInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    height: 260px; }
+  .proyectos .nombreProyecto {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1rem; }
+  .proyectos .hrProyecto {
+    width: 122px;
+    margin: -0.5rem auto; }
+  .proyectos .tags {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+    .proyectos .tags p {
+      background-color: rgba(137, 41, 255, 0.65);
+      color: white;
+      padding: 0 0.5rem;
+      margin: 0.5rem 0.5rem 0 0.5rem;
+      border-radius: 4px; }
+  .proyectos .textoProyecto {
+    text-align: left;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+    font-size: 16px; }
+  .proyectos .links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; }
+    .proyectos .links a {
+      background-color: rgba(137, 41, 255, 0.65);
+      color: black;
+      border-radius: 4px;
+      padding: 0.2rem 1rem;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+
 .gradiente {
   background: linear-gradient(0deg, rgba(145, 108, 252, 0.72) 0%, #6ce2fc 100%); }
 
@@ -39,41 +114,27 @@
 html {
   font-family: 'Oswald', sans-serif; }
 
-@keyframes mainTransition {
-  0% { }
-  25% { }
+/* aparecer views */
+@keyframes aparecer {
+  0% {
+    transform: translate(150%, 0); }
+  80% {
+    transform: translate(-20px); }
+  100% {
+    transform: translate(0, 0); } }
+
+.aparecer {
+  animation: aparecer 1s forwards; }
+
+/* desaparecer views */
+@keyframes desaparecer {
   50% {
     transform: translate(20%, 0); }
   100% {
     transform: translate(-150%, 0); } }
 
-@keyframes mainTransition2 {
-  0% { }
-  25% { }
-  50% {
-    transform: translate(50%, 0); }
-  99% {
-    transform: translate(-100%, 0); }
-  100% {
-    transform: translate(100%, 0); } }
-
-@keyframes viene {
-  0% {
-    transform: translate(150%, 0); }
-  25% { }
-  50% { }
-  99% { }
-  100% {
-    transform: translate(0, 0); } }
-
-.viene {
-  animation: viene 1s forwards; }
-
-.seVa2 {
-  animation: mainTransition2 1s forwards; }
-
-.seVa {
-  animation: mainTransition 1s forwards; }
+.desaparecer {
+  animation: desaparecer 1s forwards; }
 
 .navWrapper {
   height: 50px;
@@ -93,8 +154,9 @@ html {
     left: 0;
     right: 0;
     flex-direction: column;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.534);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.534);
     transform: translateY(-105%);
+    z-index: 2;
     transition: .2s; }
     .navWrapper .tabNav .iconoCloseNav {
       margin: 0.4rem 0.2rem 0 0;
