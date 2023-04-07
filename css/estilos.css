@@ -38,12 +38,14 @@
   flex-direction: column; }
   .proyectos .tituloProyectos {
     font-size: 48px;
-    text-align: center; }
+    text-align: center;
+    padding: 2rem 0; }
   .proyectos .proyectosWrapper {
     display: flex;
     gap: 2rem;
-    margin: 0 1rem;
+    padding: 0 3rem;
     overflow-x: scroll;
+    scrollbar-width: none;
     scroll-snap-type: x mandatory; }
     .proyectos .proyectosWrapper .proyecto {
       margin: 0 20px;
@@ -51,6 +53,8 @@
       border-radius: 26px 26px 26px 26px;
       background-color: #D9D9D9;
       max-width: 282px; }
+  .proyectos .proyectosWrapper::-webkit-scrollbar {
+    width: 0 !important; }
   .proyectos .proyectoImg {
     height: 167px;
     width: 282px;
@@ -114,6 +118,29 @@
 html {
   font-family: 'Oswald', sans-serif; }
 
+/* clases */
+.aparecer {
+  animation: aparecer 1s forwards; }
+
+.aparecer2 {
+  animation: aparecer2 1s forwards; }
+
+.aparecer3 {
+  animation: aparecer3 1s forwards; }
+
+.aparecer4 {
+  animation: aparecer4 1s forwards; }
+
+.aparecer5 {
+  animation: aparecer5 1s forwards; }
+
+.desaparecer {
+  animation: desaparecer 1s forwards; }
+
+.desaparecer2 {
+  animation: desaparecer2 1s forwards; }
+
+/* Keyframes */
 /* aparecer views */
 @keyframes aparecer {
   0% {
@@ -123,8 +150,37 @@ html {
   100% {
     transform: translate(0, 0); } }
 
-.aparecer {
-  animation: aparecer 1s forwards; }
+@keyframes aparecer2 {
+  0% {
+    transform: translate(-150%, 0); }
+  80% {
+    transform: translate(20px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes aparecer3 {
+  0% {
+    transform: translate(0, 150%); }
+  80% {
+    transform: translate(0, -20px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes aparecer4 {
+  0% {
+    transform: translate(0, -150%); }
+  80% {
+    transform: translate(0, 20px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes aparecer5 {
+  0% {
+    transform: translate(150%, 150%); }
+  80% {
+    transform: translate(-20px, -20px); }
+  100% {
+    transform: translate(0, 0); } }
 
 /* desaparecer views */
 @keyframes desaparecer {
@@ -133,8 +189,11 @@ html {
   100% {
     transform: translate(-150%, 0); } }
 
-.desaparecer {
-  animation: desaparecer 1s forwards; }
+@keyframes desaparecer2 {
+  50% {
+    transform: translate(20%, -5%); }
+  100% {
+    transform: translate(-150%, 150%); } }
 
 .navWrapper {
   height: 50px;
@@ -181,3 +240,21 @@ html {
         text-decoration: none; }
   .navWrapper .navOpen {
     transform: translateY(0); }
+
+.sobreMi {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px); }
+  .sobreMi img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 3rem; }
+  .sobreMi .muchotexto {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center; }

@@ -11,7 +11,7 @@
 <body class="gradiente" style="height: 100vh;">
 
     <!-- Front page -->
-    <section id="inicio">
+    <section id="inicio" >
         <!-- Header Mobile -->
         <header class="navWrapper">
             <div class="botonBurger">
@@ -24,17 +24,19 @@
                         <p>santiago font</p>
                     </div>
                     <div class="linksNav">
-                        <a href="#">Proyectos</a>
-                        <a href="#">Sobre mí</a>
-                        <a href="#">Contacto</a>
+                        <a href="#" id="inicioo" onclick="cerrarTodasExcepto(main)">inicio</a>
+                        <a href="#" id="proyectosMenu" onclick="cerrarTodasExcepto(proyectos)">Proyectos</a>
+                        <a href="#" id="botonSobreMI" onclick="cerrarTodasExcepto(sobreMi)">Sobre mí</a>
+                        <a href="#" id="botonHabilidades" onclick="cerrarTodasExcepto(habilidades)" >Habilidades</a>
+                        <a href="#" id="botonContacto" onclick="cerrarTodasExcepto(contacto)">Contacto</a>
                     </div>
                 </div>
 
             </div>
         </header>
     </section>
-    <!-- Front Page -->
-    <section id="main" class="mainWrapper aparecer" style="display:none;">
+    <!-- Front Page  style="display:none"  -->
+    <section id="main" class="mainWrapper aparecer open" >
         <div class="mainNombre ">
             <p class="aparecer">Santiago</p>
             <p class="mainApellido ">Font</p>  
@@ -43,11 +45,11 @@
             <p>- Frontend Developer</p>
             <p class="aparecer">- Estudiando Backend</p>
         </div>
-        <a href="#" class="botonBlanco ">Ver más</a>
+        <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(proyectos)">Ver más</a>
 
     </section>
     
-    <section class="proyectos">
+    <section id="proyectos" class="proyectos  " style="display:none">
             <div class="tituloProyectos"><p>Proyectos</p></div>
             <div class="proyectosWrapper">
                 <div class="proyecto">
@@ -68,7 +70,7 @@
 
                         </div>
                         <div class="textoProyecto">
-                            <p>Desarrollar una página web para mostrar sus productos e información en exposiciones donde participe la empresa.</p>
+                            <p>Página web para mostrar sus productos e información en exposiciones donde participe la empresa.</p>
                         </div>
                         <div class="links"><a href="https://github.com/Switchinhg/MAMAYOQUIERO">Github</a><a href="https://descuento.mamayoquiero.com.ar/">Visitar</a></div>
                     </div>
@@ -143,13 +145,29 @@
                     </div>
                 </div>
             </div>
-            <div class="bullet">
-                <ul style="display: flex; gap: 2rem;">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+
+    </section>
+
+    <section id="sobreMi" class="sobreMi " style="display: none;">
+        <img src="./img/yo.png" alt="">
+        <div class="muchotexto">
+
+            <p>¡Hola! Soy Santiago, un apasionado desarrollador web con experiencia en 
+                desarrollo FullStack. Me encanta crear diseños elegantes y funcionales 
+                y trabajar en proyectos que brinden valor a los usuarios.</p>
+
+                <p>Estoy trabajando en mejorar mis habilidades en el desarrollo backend
+                y en la construcción de aplicaciones web completas.</p>
+
+                <p>Me encanta explorar nuevas tecnologías y aprender cosas nuevas.</p>
+        </div>
+    </section>
+
+    <section id="habilidades"class="habilidades">
+        
+    </section>
+    <section id="contacto"class="contacto">
+
     </section>
     
 </body>

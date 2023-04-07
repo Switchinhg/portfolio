@@ -1,5 +1,33 @@
 
+/* clases */
+.aparecer{
+    animation:aparecer 1s forwards
+}
 
+.aparecer2{
+    animation:aparecer2 1s forwards
+}
+
+.aparecer3{
+    animation:aparecer3 1s forwards
+}
+
+.aparecer4{
+    animation:aparecer4 1s forwards
+}
+
+.aparecer5{
+    animation:aparecer5 1s forwards
+}
+
+.desaparecer{
+    animation: desaparecer 1s forwards;
+}    
+.desaparecer2{
+    animation: desaparecer2 1s forwards;
+}    
+
+/* Keyframes */
 /* aparecer views */
 @keyframes aparecer {
     0%{
@@ -13,10 +41,56 @@
         transform: translate(0, 0);
     }
 }
+@keyframes aparecer2 {
+    0%{
+        transform: translate(-150% , 0);
+    } 
 
-.aparecer{
-    animation:aparecer 1s forwards
+    80%{
+        transform: translate(20px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
+@keyframes aparecer3 {
+    0%{
+        transform: translate(0 , 150%);
+    } 
+
+    80%{
+        transform: translate(0,-20px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+@keyframes aparecer4 {
+    0%{
+        transform: translate(0 , -150%);
+    } 
+
+    80%{
+        transform: translate(0,20px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+@keyframes aparecer5 {
+    0%{
+        transform: translate(150% , 150%);
+    } 
+
+    80%{
+        transform: translate(-20px,-20px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+
 /* desaparecer views */
 @keyframes desaparecer {    
     50%{
@@ -26,7 +100,13 @@
         transform: translate(-150% , 0);
     }    
 }    
-.desaparecer{
-    animation: desaparecer 1s forwards;
+@keyframes desaparecer2 {    
+    50%{
+        transform: translate(20% , -5%);
+    }      
+    100%{
+        transform: translate(-150% , 150%);
+    }    
 }    
+
 
