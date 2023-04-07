@@ -36,7 +36,7 @@
         </header>
     </section>
     <!-- Front Page  style="display:none"  -->
-    <section id="main" class="mainWrapper aparecer open" >
+    <section id="main" class="mainWrapper aparecer open"  >
         <div class="mainNombre ">
             <p class="aparecer">Santiago</p>
             <p class="mainApellido ">Font</p>  
@@ -231,8 +231,29 @@
             </div>
         </div>
         </section>
-    <section id="contacto"class="contacto">
+    <section id="contacto"class="contacto" style="display:none">
+        <!-- HTML FORMULARIO -->
+            <form action="https://formspree.io/f/mvollgyk" method="POST" name="enviarformulario" >
 
+                <h1>Contacto</h1>
+                <p class="pequeño">Encantado si hablamos!</p>
+
+                <!-- nombre y email -->
+                <div>
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+                    <input type="email" placeholder="alguien@direccion.com" name="mail" id="mail" required>
+                </div>
+
+                <!-- asunto -->
+                <input placeholder="Asunto" name="asunto" id="asunto" type="text">
+
+                <!-- mensaje -->
+                <textarea name="mensaje" placeholder="Tu mensaje..." id="mensaje" cols="30" rows="5"
+                    required></textarea>
+                <div class="buttonsend">
+                    <button name="enviar" type="submit" onclick="enviarmsg()"> Enviar </button>
+                </div>
+            </form>
     </section>
     
 </body>
