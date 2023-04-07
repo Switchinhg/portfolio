@@ -6,4 +6,21 @@
 }
 html{
     font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+.tags{
+    width: auto ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    p{
+    background-color: hsla(267, 100%, 58%, 0.65);
+    color: white;
+    padding: 0 0.5rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 4px;
+    }
 }

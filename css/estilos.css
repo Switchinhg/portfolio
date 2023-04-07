@@ -79,17 +79,6 @@
   .proyectos .hrProyecto {
     width: 122px;
     margin: -0.5rem auto; }
-  .proyectos .tags {
-    width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto; }
-    .proyectos .tags p {
-      background-color: rgba(137, 41, 255, 0.65);
-      color: white;
-      padding: 0 0.5rem;
-      margin: 0.5rem 0.5rem 0 0.5rem;
-      border-radius: 4px; }
   .proyectos .textoProyecto {
     text-align: left;
     padding: 0 1.5rem;
@@ -116,7 +105,22 @@
   background: linear-gradient(0deg, #49e7c1 0%, #64d7fc 100%); }
 
 html {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden; }
+
+.tags {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
+  .tags p {
+    background-color: rgba(137, 41, 255, 0.65);
+    color: white;
+    padding: 0 0.5rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 4px; }
 
 /* clases */
 .aparecer {
@@ -247,7 +251,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 150px); }
+  height: calc(100vh - 50px); }
   .sobreMi img {
     width: 100px;
     border-radius: 50%;
@@ -257,4 +261,23 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 5rem; }
+
+.habilidades {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; }
+  .habilidades hr {
+    width: 40%;
+    height: 1px;
+    border: none;
+    background-color: black; }
+  .habilidades .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
