@@ -22,7 +22,7 @@ const contacto = document.getElementById("contacto")
 
 const arregloSecciones = [main, proyectos, sobreMi,habilidades,contacto]
 const aparecer = ['aparecer','aparecer2','aparecer3','aparecer4','aparecer5']
-const desaparecer = ['desaparecer', 'desaparecer2']
+const desaparecer = ['desaparecer', 'desaparecer2','desaparecer3']
 
 
 openNav.addEventListener('click', ()=>{
@@ -39,23 +39,25 @@ window.addEventListener('click', (e)=>{
 })
 
 /* Cerrar todas */
-function cerrarTodasExcepto(noCerrar){
+function cerrarTodasExcepto(noCerrar, bajar){
   if(!noCerrar.classList.contains('open')){
-
   arregloSecciones.forEach(seccion=>{
     if(seccion !== noCerrar){
-      aparecer.forEach(e=>seccion.classList.remove(e))
-        seccion.classList.add(getRandomAnimation('desaparecer'))
+      /* se va */
+      aparecer.forEach(e=>
+        seccion.classList.remove(e))
+        seccion.classList.add( bajar=== 'si'?desaparecer[2]:getRandomAnimation('desaparecer'))
         seccion.classList.remove('open')
       setTimeout(() => {
 
         seccion.style.display = 'none'
       }, 1000);
     }else{
+      /* aparece  */
       tabNav.classList.remove('navOpen');
       setTimeout(() => {
         noCerrar.style.display = 'flex'
-        noCerrar.classList.add(getRandomAnimation('aparecer'))
+        noCerrar.classList.add(bajar=== 'si'? aparecer[2]: getRandomAnimation('aparecer'))
         desaparecer.forEach(e=>noCerrar.classList.remove(e))
 
         noCerrar.classList.add('open')

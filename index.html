@@ -24,11 +24,11 @@
                         <p>santiago font</p>
                     </div>
                     <div class="linksNav">
-                        <a href="#" id="inicioo" onclick="cerrarTodasExcepto(main)">inicio</a>
-                        <a href="#" id="proyectosMenu" onclick="cerrarTodasExcepto(proyectos)">Proyectos</a>
-                        <a href="#" id="botonSobreMI" onclick="cerrarTodasExcepto(sobreMi)">Sobre mí</a>
-                        <a href="#" id="botonHabilidades" onclick="cerrarTodasExcepto(habilidades)" >Habilidades</a>
-                        <a href="#" id="botonContacto" onclick="cerrarTodasExcepto(contacto)">Contacto</a>
+                        <a href="#" id="inicioo" onclick="cerrarTodasExcepto(main, 'no')">inicio</a>
+                        <a href="#" id="proyectosMenu" onclick="cerrarTodasExcepto(proyectos, 'no')">Proyectos</a>
+                        <a href="#" id="botonSobreMI" onclick="cerrarTodasExcepto(sobreMi, 'no')">Sobre mí</a>
+                        <a href="#" id="botonHabilidades" onclick="cerrarTodasExcepto(habilidades, 'no')" >Habilidades</a>
+                        <a href="#" id="botonContacto" onclick="cerrarTodasExcepto(contacto, 'no')">Contacto</a>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@
             <p>- Frontend Developer</p>
             <p class="aparecer">- Estudiando Backend</p>
         </div>
-        <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(proyectos)">Ver más</a>
+        <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(proyectos, 'si')">Proyectos</a>
 
     </section>
     
@@ -145,6 +145,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(sobreMi, 'si')">Sobre Mi</a>
 
     </section>
 
@@ -161,6 +162,8 @@
 
                 <p>Me encanta explorar nuevas tecnologías y aprender cosas nuevas.</p>
         </div>
+        <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(habilidades, 'si')">Habilidades</a>
+
     </section>
 
     <section id="habilidades"class="habilidades" style="display: none;">
@@ -230,6 +233,8 @@
                 <p class="tag">SQL</p>
             </div>
         </div>
+        <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(contacto, 'si')">Contactame!</a>
+
         </section>
     <section id="contacto"class="contacto" style="display:none">
         <!-- HTML FORMULARIO -->

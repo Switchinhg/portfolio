@@ -26,6 +26,9 @@
 .desaparecer2{
     animation: desaparecer2 1s forwards;
 }    
+.desaparecer3{
+    animation: desaparecer3 1s forwards;
+}    
 
 /* Keyframes */
 /* aparecer views */
@@ -106,6 +109,14 @@
     }      
     100%{
         transform: translate(-150% , 150%);
+    }    
+}    
+@keyframes desaparecer3 {    
+    50%{
+        transform: translate(0 , 20%);
+    }      
+    100%{
+        transform: translate(0% , -150%);
     }    
 }    
 

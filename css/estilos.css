@@ -11,7 +11,9 @@
   background-color: white;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.432);
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  width: auto;
+  align-self: center; }
 
 .mainWrapper {
   height: calc(100vh - 50px);
@@ -145,6 +147,9 @@ html {
 .desaparecer2 {
   animation: desaparecer2 1s forwards; }
 
+.desaparecer3 {
+  animation: desaparecer3 1s forwards; }
+
 /* Keyframes */
 /* aparecer views */
 @keyframes aparecer {
@@ -199,6 +204,12 @@ html {
     transform: translate(20%, -5%); }
   100% {
     transform: translate(-150%, 150%); } }
+
+@keyframes desaparecer3 {
+  50% {
+    transform: translate(0, 20%); }
+  100% {
+    transform: translate(0%, -150%); } }
 
 .navWrapper {
   height: 50px;
