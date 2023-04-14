@@ -1,3 +1,4 @@
+/* Navbar Small(phone) screen */
 
 .navWrapper{
     height: 50px;
@@ -57,5 +58,39 @@
    
     .navOpen{
         transform: translateY(0);
+    }
+}
+
+/* Navbar Large screen */
+
+
+
+@media only screen and (min-width: 768px){
+
+    .navWrapper{
+        .tabNav{
+            transform: none;
+
+            .linksNav{
+                flex-direction: row;
+                justify-content: center;
+                gap: 1.5rem;
+                padding: .5rem;
+                & a:hover{
+                    color: coral;
+                }
+            }
+            .nombreNav{
+                p{
+                    font-size: 20px;
+                    padding: 0 0;
+                    border-bottom: none;
+                }
+            }
+        }
+        .iconoCloseNav{
+            display: none;
+        }
+        
     }
 }

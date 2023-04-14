@@ -13,7 +13,7 @@
     <!-- Front page -->
     <section id="inicio" >
         <!-- Header Mobile -->
-        <header class="navWrapper">
+        <header class="navWrapper ">
             <div class="botonBurger">
                 <img id="openNav" src="./img/burgerIcon.svg" alt="">
             </div>
@@ -167,72 +167,67 @@
     </section>
 
     <section id="habilidades"class="habilidades" style="display: none;">
-        <div class="block">
-            <p>Tengo experiencia en tecnologias de Frontend como:</p>
-            <div class="tags">
-                <p class="tag">HTML</p>
-                <p class="tag">CSS</p>
-                <p class="tag">SASS</p>
-                <p class="tag">Javascript</p>
-                <p class="tag">ReactJS</p>
+        
+            <div class="block">
+                <p>Tengo experiencia en tecnologias de Frontend como:</p>
+                <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">CSS</p>
+                    <p class="tag">SASS</p>
+                    <p class="tag">Javascript</p>
+                    <p class="tag">ReactJS</p>
+                    <p class="tag">Git</p>
+                    <p class="tag">NPM</p>
+                </div>
             </div>
-        </div>
-        <hr>
-
-        <div class="block">
-
-            <p>Frameworks y librerias:</p>
-            <div class="tags">
-                <p class="tag">React</p>
-                <p class="tag">Redux</p>
-                <p class="tag">React Router</p>
-                <p class="tag">Bootstrap</p>
-                <p class="tag">Material-Ui</p>
+            
+            <div class="block">
+                <p>Frameworks y librerias:</p>
+                <div class="tags">
+                    <p class="tag">React</p>
+                    <p class="tag">Redux</p>
+                    <p class="tag">React Router</p>
+                    <p class="tag">Bootstrap</p>
+                    <p class="tag">Material-Ui</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="block">
+            <!-- <div class="block">
+                <p>Herramientas de desarrollo:</p>
+                <div class="tags">
+                    <p class="tag">Git</p>
+                    <p class="tag">NPM</p>
+                </div>
+            </div> -->
 
-            <p>Herramientas de desarrollo:</p>
-            <div class="tags">
-                <p class="tag">Git</p>
-                <p class="tag">NPM</p>
+            <div class="block">
+                <p>Plataformas:</p>
+                <div class="tags">
+                    <p class="tag">Firebase</p>
+                    <p class="tag">Supabase</p>
+                    <p class="tag">Netlify</p>
+                    <p class="tag">Railway</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="block">
+            <div class="block">
+                <p>Tecnologias Backend:</p>
+                <div class="tags">
+                    <p class="tag">NodeJS</p>
+                    <p class="tag">Express</p>
+                    <p class="tag">bcrypt</p>
+                    <p class="tag">JWT</p>
+                    <p class="tag">Mongoose</p>
+                    <p class="tag">Socket.io</p>
+                    <p class="tag">Patrón MVC</p>
+                </div>
+            </div>
+            <div class="block">
+                <p>Bases de datos:</p>
+                <div class="tags">
+                    <p class="tag">MongoDB</p>
+                    <p class="tag">SQL</p>
+                </div>
+            </div>
 
-            <p>Plataformas:</p>
-            <div class="tags">
-                <p class="tag">Firebase</p>
-                <p class="tag">Supabase</p>
-                <p class="tag">Netlify</p>
-                <p class="tag">Railway</p>
-            </div>
-        </div>
-        <hr>
-        <div class="block">
-
-            <p>Tecnologias Backend:</p>
-            <div class="tags">
-                <p class="tag">NodeJS</p>
-                <p class="tag">Express</p>
-                <p class="tag">bcrypt</p>
-                <p class="tag">JWT</p>
-                <p class="tag">Mongoose</p>
-                <p class="tag">Socket.io</p>
-                <p class="tag">Patrón MVC</p>
-            </div>
-        </div>
-        <hr>
-        <div class="block">
-
-            <p>Bases de datos:</p>
-            <div class="tags">
-                <p class="tag">MongoDB</p>
-                <p class="tag">SQL</p>
-            </div>
-        </div>
         <a href="#" id="botonVerMas"class="botonBlanco "onclick="cerrarTodasExcepto(contacto, 'si')">Contactame!</a>
 
         </section>
@@ -244,7 +239,7 @@
                 <p class="pequeño">Encantado si hablamos!</p>
 
                 <!-- nombre y email -->
-                <div>
+                <div class="nombreYEmail">
                     <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
                     <input type="email" placeholder="alguien@direccion.com" name="mail" id="mail" required>
                 </div>

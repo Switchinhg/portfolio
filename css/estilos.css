@@ -37,6 +37,7 @@
 .proyectos {
   height: calc(100vh - 50px);
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-direction: column; }
   .proyectos .tituloProyectos {
@@ -46,13 +47,13 @@
   .proyectos .proyectosWrapper {
     display: flex;
     gap: 2rem;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     overflow-x: scroll;
     scrollbar-width: none;
     scroll-snap-type: x mandatory; }
     .proyectos .proyectosWrapper .proyecto {
       margin: 0 20px;
-      height: 451px;
+      height: 430px;
       border-radius: 26px 26px 26px 26px;
       background-color: #D9D9D9;
       max-width: 282px; }
@@ -73,7 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
     height: 260px; }
   .proyectos .nombreProyecto {
     font-size: 20px;
@@ -85,7 +86,7 @@
   .proyectos .textoProyecto {
     text-align: left;
     padding: 0 1.5rem;
-    flex-grow: 1;
+    line-height: 20px;
     font-size: 16px; }
   .proyectos .links {
     display: flex;
@@ -100,6 +101,14 @@
       text-decoration: none;
       letter-spacing: 2px;
       text-transform: uppercase; }
+      .proyectos .links a:hover {
+        background-color: rgba(137, 41, 255, 0.308); }
+
+@media only screen and (min-width: 768px) {
+  .proyectos .tituloProyectos {
+    padding: 0; }
+  .proyectos .proyectosWrapper {
+    text-align: center; } }
 
 .gradiente {
   background: linear-gradient(0deg, rgba(145, 108, 252, 0.72) 0%, #6ce2fc 100%); }
@@ -123,7 +132,9 @@ html {
     color: white;
     padding: 0 0.5rem;
     margin: 0.5rem 0.5rem 0 0.5rem;
-    border-radius: 4px; }
+    border-radius: 4px;
+    cursor: default;
+    user-select: none; }
 
 /* clases */
 .aparecer {
@@ -211,6 +222,7 @@ html {
   100% {
     transform: translate(0%, -150%); } }
 
+/* Navbar Small(phone) screen */
 .navWrapper {
   height: 50px;
   display: flex;
@@ -257,6 +269,24 @@ html {
   .navWrapper .navOpen {
     transform: translateY(0); }
 
+/* Navbar Large screen */
+@media only screen and (min-width: 768px) {
+  .navWrapper .tabNav {
+    transform: none; }
+    .navWrapper .tabNav .linksNav {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: .5rem; }
+      .navWrapper .tabNav .linksNav a:hover {
+        color: coral; }
+    .navWrapper .tabNav .nombreNav p {
+      font-size: 20px;
+      padding: 0 0;
+      border-bottom: none; }
+  .navWrapper .iconoCloseNav {
+    display: none; } }
+
 .sobreMi {
   padding: 2rem;
   display: flex;
@@ -282,7 +312,8 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem; }
+  gap: .5rem;
+  margin-top: 2rem; }
   .habilidades hr {
     width: 40%;
     height: 1px;
@@ -292,7 +323,11 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    max-width: 450px;
+    border-bottom: solid black 1px;
+    padding: .5rem;
+    margin: 0 1rem; }
 
 .contacto {
   height: calc(100vh - 50px);
@@ -305,7 +340,7 @@ html {
     gap: .2rem;
     padding-bottom: 4rem; }
     .contacto form input, .contacto form textarea {
-      padding: .5rem 1rem;
+      padding: .5rem;
       resize: none; }
     .contacto form input:focus, .contacto form textarea:focus {
       outline: none;
@@ -318,3 +353,13 @@ html {
       .contacto form .buttonsend button {
         padding: .5rem 3rem;
         cursor: pointer; }
+
+@media only screen and (min-width: 768px) {
+  form {
+    width: 600px; }
+    form #mensaje {
+      height: 200px; }
+    form .nombreYEmail {
+      display: flex; }
+      form .nombreYEmail input {
+        width: 50%; } }
