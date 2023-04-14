@@ -75,7 +75,8 @@
     flex-direction: column;
     justify-content: center;
     gap: .5rem;
-    height: 260px; }
+    height: 260px;
+    padding: 1rem 0; }
   .proyectos .nombreProyecto {
     font-size: 20px;
     text-align: center;
@@ -86,6 +87,7 @@
   .proyectos .textoProyecto {
     text-align: left;
     padding: 0 1.5rem;
+    flex-grow: 1;
     line-height: 20px;
     font-size: 16px; }
   .proyectos .links {
@@ -108,7 +110,13 @@
   .proyectos .tituloProyectos {
     padding: 0; }
   .proyectos .proyectosWrapper {
-    text-align: center; } }
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto; }
+    .proyectos .proyectosWrapper .proyecto {
+      margin: 0; } }
 
 .gradiente {
   background: linear-gradient(0deg, rgba(145, 108, 252, 0.72) 0%, #6ce2fc 100%); }

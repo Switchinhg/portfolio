@@ -48,6 +48,7 @@
         justify-content: center;
         gap: .5rem;
         height: 260px ;
+        padding:   1rem 0;
     }
     .nombreProyecto{
         font-size: 20px;
@@ -63,7 +64,7 @@
     .textoProyecto{
         text-align: left;
         padding: 0 1.5rem;
-        // flex-grow: 1;
+        flex-grow: 1;
         line-height: 20px;
         font-size: 16px;
         
@@ -98,6 +99,13 @@
         }
         .proyectosWrapper{
             text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            .proyecto{
+                margin: 0;
+            }
         }
     }
 }
