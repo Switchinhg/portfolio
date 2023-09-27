@@ -1,18 +1,30 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Sass portfolio",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss sass/main.scss css/estilos.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "dev": "vite",
+    "build": "vite build",
+    "start": "sass src/sass/main.scss src/css/style.css ",
+    "watch-css": "nodemon -e scss -x \"npm run start\"",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "author": "Swicho",
-  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.68.0"
+  },
   "devDependencies": {
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.22",
-    "sass": "^1.60.0"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
   }
 }
