@@ -10,3 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
+.main_page_wrap{
+  display: flex;
+  gap: 30px;
+}

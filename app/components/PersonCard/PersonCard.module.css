@@ -1,0 +1,33 @@
+.personCard{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+    width: 50%;
+    min-width: 450px;
+}
+.personCard img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid black 1px;
+}
+.personCard p{
+    color: rgb(86 86 86 / 1);
+}
+.personCard h1{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.infoWrap{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 23px;
+}
+.infoWrap span{
+    font-size: 30px;
+}
