@@ -1,17 +1,100 @@
 .grid{
     display: flex;
-    gap: 30px;
-    padding:60px;
+    flex-direction: column;
+    gap: 20px;
+    padding:60px 0;
+    min-width: 850px;
+
 }
-.gridCard{
+.rowWrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px 20px;
+}
+.grid_small{
     width: 170px;
     height: 170px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.205);
-    border-radius: 20px;
 }
-.gridCard:has(:not(img)){
-    padding: 30px;
+.grid_big{
+    width: 380px;
+    height: 170px;
+}
+.gridCard{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+    transform: translate(-10px, -10px);
+    opacity: 0;
+}
+.gridCardInner{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+.gridCard:hover{
+    background-color: rgba(235, 235, 235, 0.37);
+    transition: background-color .5s;
+}
+.icon{
+    padding: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0;
+    display: flex;
+}
+.resume{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.resume svg{
+    height: 15px;
+    position: relative;
+    top: -4px;
+    font-weight: lighter;
+    /* font-size: 10px; */
+}
+.gridCardInner:has(:not(img)){
+    padding: 20px;
 }
 .gridCard img{
+    object-fit: cover;
+    cursor:auto;
     border-radius: 20px;
+}
+.anim{
+    animation: sppearSpread .7s forwards ;
+}
+
+
+@keyframes sppearSpread {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+.gridCard:nth-child(2){
+    animation-delay: 200ms;
+}
+.gridCard:nth-child(3){
+    animation-delay: 300ms;
+}
+.gridCard:nth-child(4){
+    animation-delay: 400ms;
 }
