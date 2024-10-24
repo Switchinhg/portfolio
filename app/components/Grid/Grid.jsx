@@ -5,10 +5,12 @@ import styles from './grid.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { createClient } from "@supabase/supabase-js";
+import { Skeleton, Button } from '@mantine/core';
 const supabase = createClient(process.env.NEXT_PUBLIC_PROJECT_URL, process.env.NEXT_PUBLIC_ANON_KEY);
 
 export default function Grid() {
   const [rows, setRows] = useState([]);
+  const [loading, setLoading] = useState(true);
 
     useEffect(() => {
       getCountries();
@@ -16,6 +18,7 @@ export default function Grid() {
 
     async function getCountries() {
       const { data } = await supabase.from("rows").select();
+      setLoading(false)
       setRows(data);
     }
 
@@ -30,7 +33,8 @@ export default function Grid() {
     <div className={styles.grid}>
 
       <div className={styles.rowWrap}>
-        {rows.map((card, index) => (
+        {rows.length>0?
+        rows.map((card, index) => (
               <div key={index} className={`${styles.gridCard} ${card.type == "small"?styles.grid_small:styles.grid_big} ${styles.anim}`}>
                 {card.has_image?
                   <Image 
@@ -55,51 +59,14 @@ export default function Grid() {
                   :
                   null
                 }
+              </div> 
+        ))
+        :
+        <Skeleton visible={loading} height={170} width={170} radius="xl"></Skeleton>
+      }
 
-                {/* {
-                  card.has_link && !card.has_image?
-                  <div  className={`${styles.gridCardInner} ${styles.anim}`}>
-                    <div className={styles.icon}>
-                    { <Icon name={card.icon} />}
-                    </div>
-                    <div className={styles.resume}>
-                      <p>{card.title} </p>
-                      { <Icon name={card.textIcon} />}
-                    </div>
-                  </div>:
-                  null
-                } */}
-                </div> 
-        ))}
 
       </div>
-
-
-{/*     
-    <Link href={"/resume"} className={`${styles.gridCard} ${styles.anim}`}>
-      <div className={styles.icon}>
-        <NotepadText />
-      </div>
-      <div className={styles.resume}>
-        <p>Resumé/CV </p>
-        <ArrowUpRight />
-      </div>
-    </Link>
-
-    <Link href={"/portfolio"} className={`${styles.gridCard} ${styles.anim}`}>
-    <div className={styles.icon}>
-        <NotepadText />
-      </div>
-      <div className={styles.resume}>
-        <p>Portfolio</p>
-        <ArrowUpRight />
-      </div>
-    </Link>
-
-    <div className={`${styles.gridCard} ${styles.anim}`}><p>hola</p></div> */}
-
-
-
 
     </div>
   )
