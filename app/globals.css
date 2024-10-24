@@ -12,4 +12,13 @@
 }
 .main_page_wrap{
   display: flex;
+  max-width: 1590px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1390px) {
+  .main_page_wrap{
+    flex-direction: column;
+    align-items: center;
+  }
 }

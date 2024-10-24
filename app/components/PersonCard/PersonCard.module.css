@@ -1,5 +1,5 @@
 .personCard{
-    padding: 60px;
+    padding: 60px 0 60px 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -31,3 +31,21 @@
 .infoWrap span{
     font-size: 30px;
 }
+
+@media only screen and (max-width: 1390px) {
+    .personCard{
+        max-width: 370px;
+        width: 370px;
+        min-width: 370px;
+        padding: 20px 0;
+    }
+    .personIMG{
+        align-self: center;
+    }
+    .infoWrap h1{ 
+        font-size: 18px;
+    }
+    .infoWrap p{ 
+        font-size: 14px;
+    }
+  }

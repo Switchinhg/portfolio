@@ -8,7 +8,7 @@ export default function PersonCard() {
 
   return (
     <section className={styles.personCard}>
-      <div>
+      <div className={styles.personIMG}>
         {data?<img  src="" alt="" />: <Skeleton height={200} circle mb="xl" />}
         
         
