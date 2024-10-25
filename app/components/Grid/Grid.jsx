@@ -15,10 +15,10 @@ export default function Grid() {
   const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-      getCountries();
+      getCardData();
     }, []);
 
-    async function getCountries() {
+    async function getCardData() {
       const { data } = await supabase.from("rows").select();
       setLoading(false)
       setRows(data);

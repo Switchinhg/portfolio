@@ -1,17 +1,24 @@
 .personCard{
-    padding: 60px 0 60px 60px;
+    padding: 50px 0 60px 60px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     max-width: 50%;
     width: 50%;
     min-width: 450px;
 }
+.personCardWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transform: translateY(10px);
+    opacity: 0;
+}
 .personCard img{
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
-    border: solid black 1px;
+    object-fit:cover;
 }
 .personCard p{
     color: rgb(86 86 86 / 1);
@@ -30,6 +37,27 @@
 }
 .infoWrap span{
     font-size: 30px;
+}
+.infoWrap_title_skeleton{
+    display: flex;
+    gap: 10px;
+}
+.currently_work_wrap, .location_wrap{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.location_wrap{
+    gap: 10px;
+}
+.animUp{
+    animation: animUp 1s forwards;
+}
+@keyframes animUp {
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1390px) {
