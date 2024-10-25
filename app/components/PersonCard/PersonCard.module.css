@@ -19,6 +19,7 @@
     height: 210px;
     border-radius: 50%;
     object-fit:cover;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 .personCard p{
     color: rgb(86 86 86 / 1);
