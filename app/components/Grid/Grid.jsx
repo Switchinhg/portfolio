@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { createClient } from "@supabase/supabase-js";
 import { Skeleton, Button } from '@mantine/core';
+import GridCardImg from './GridCardImg'
+import GridCardblock from './GridCardblock'
 const supabase = createClient(process.env.NEXT_PUBLIC_PROJECT_URL, process.env.NEXT_PUBLIC_ANON_KEY);
 
 export default function Grid() {
@@ -21,13 +23,6 @@ export default function Grid() {
       setLoading(false)
       setRows(data);
     }
-
-
-    const Icon = ({ name, color, size }) => {
-      const LucideIcon = icons[name];
-
-      return <LucideIcon color={color} size={size} />;
-    };
  
   return (
     <div className={styles.grid}>
@@ -35,34 +30,16 @@ export default function Grid() {
       <div className={styles.rowWrap}>
         {rows.length>0?
         rows.map((card, index) => (
-              <div key={index} className={`${styles.gridCard} ${card.type == "small"?styles.grid_small:styles.grid_big} ${styles.anim}`}>
-                {card.has_image?
-                  <Image 
-                    src={card.image_link}
-                    width={170}
-                    height={170}
-                    alt="Picture of the author"
-                  /> 
-                  :
-                  null
-                }
-                {card.has_link?
-                  <Link href={card.link} className={`${styles.gridCardInner} ${styles.anim}`}>
-                    <div className={styles.icon}>
-                    { <Icon name={card.icon} />}
-                    </div>
-                    <div className={styles.resume}>
-                      <p>{card.title} </p>
-                      { <Icon name={card.textIcon} />}
-                    </div>
-                  </Link>
-                  :
-                  null
-                }
-              </div> 
+                card.has_image?
+                  <GridCardImg key={index} type={card.type} img={card.image_link} index={index} />
+                :
+                  <GridCardblock key={index} type={card.type} index={index} link={card.link} icon={card.icon} textIcon={card.textIcon} title={card.title} />
         ))
         :
-        <Skeleton visible={loading} height={170} width={170} radius="xl"></Skeleton>
+        <>
+          <Skeleton visible={loading} height={170} width={170} radius="xl"></Skeleton>
+          <Skeleton visible={loading} height={170} width={170} radius="xl"></Skeleton>
+        </>
       }
 
 
