@@ -1,7 +1,6 @@
 .page_wrap{
     display: flex;
     flex-direction: column;
-    max-width: 1590px;
     margin: 0 auto;
     /* background-color: red; */
     padding: 60px;
@@ -36,5 +35,61 @@
 
 .projects_wrap{
     /* width: 100%; */
-    background-color: red;
+    display: flex;
+    gap: 10px;
+    min-height: 600px;
+}
+.sidebar{
+    min-width: 250px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+.sidebar  ul{
+    list-style: none;
+}
+.sidebar  a{
+    color: rgba(0, 0, 0, 0.514);
+    text-decoration: none;
+    font-size: 12px;
+}
+.sidebar  a:hover{
+    color: black;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.projects a{
+    text-decoration: none;
+    color: black;
+}
+.project {
+    width: 500px ;
+    height: 326px;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.274);
+}
+.project:hover img{
+    filter:brightness(1);
+    transition: filter .5s;
+}
+.project:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+.project img{
+    width: 700px ;
+    height: 412px;
+    position: relative;
+    left: -70px;
+    top: -60px;
+}
+.card_info{
+    position: relative;
+    top: -160px;
+    padding-left: 20px;
 }
