@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import '@mantine/core/styles.css';
 import { createTheme, MantineProvider } from '@mantine/core';
-import { CSPostHogProvider } from './providers'
 
 const theme = createTheme({
     colorScheme: 'light'
@@ -20,9 +19,7 @@ export default function RootLayout({ children }) {
         <body className={` antialiased`}
         >
           <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS  defaultColorScheme="light">
-            <CSPostHogProvider>
               {children}
-            </CSPostHogProvider>
           </MantineProvider>
         </body>
     </html>

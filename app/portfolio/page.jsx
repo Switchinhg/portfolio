@@ -23,7 +23,7 @@ export default function portfolio() {
           </ul>
         </div>
         <div className={styles.projects}>
-          <Link href={"/project/codeflux"} >
+          <Link href={"/portfolio/codeflux"} >
 
           {/* CodeFlux */}
             <div className={styles.project}>
@@ -41,7 +41,7 @@ export default function portfolio() {
             </div>
           </Link>
           {/* mama yo quiero */}
-          <Link href={"/project/mamayoquiero"} >
+          <Link href={"/portfolio/mamayoquiero"} >
             <div className={styles.project}>
               
               <Image  
@@ -58,7 +58,7 @@ export default function portfolio() {
             </div>
           </Link>
           {/* focusg */}
-          <Link href={"/project/focusg"} >
+          <Link href={"/portfolio/focusg"} >
             <div className={styles.project}>
               
               <Image  
@@ -75,7 +75,7 @@ export default function portfolio() {
             </div>
           </Link>
           {/* endlessmining */}
-          <Link href={"/project/endlessmining"} >
+          <Link href={"/portfolio/endlessmining"} >
             <div className={styles.project}>
               
               <Image  
@@ -92,7 +92,7 @@ export default function portfolio() {
             </div>
           </Link>
           {/* hackfreecanvas */}
-          <Link href={"/project/hackfreecanvas"} >
+          <Link href={"/portfolio/hackfreecanvas"} >
             <div className={styles.project}>
               
               <Image  
@@ -109,7 +109,7 @@ export default function portfolio() {
             </div>
           </Link>
           {/* pizzeria */}
-          <Link href={"/project/pizzeria"} >
+          <Link href={"/portfolio/pizzeria"} >
             <div className={styles.project}>
               
               <Image  

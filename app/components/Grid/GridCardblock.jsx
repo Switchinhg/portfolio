@@ -4,7 +4,7 @@ import styles from './grid.module.css'
 import Link from 'next/link'
 import { icons } from 'lucide-react'
 
-export default function GridCardblock({type, index, link, icon, textIcon, title}) {
+export default function GridCardblock({type, link, icon, textIcon, title,time}) {
   const [isLoaded, setIsLoaded] = useState(false);
 
 
@@ -18,7 +18,7 @@ export default function GridCardblock({type, index, link, icon, textIcon, title}
       setIsLoaded(true)
         setTimeout(() => {
           setIsLoaded(false)
-        }, 200*index);
+        }, time);
 
     }, [])
 
